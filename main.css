@@ -1,7 +1,7 @@
 *{
     padding: 0;
     margin: 0;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Times New Roman', Times, serif;
 }
 body, html{
     overflow-x: hidden;
@@ -45,6 +45,47 @@ display: none;
 .menu li a.contacts{
     margin-right: 100px;
 }
+.wrapper{
+    margin: 0 auto;
+    max-width: 1100px;
+    width: 100%;
+}
+.intro{
+    margin-top: 28px;
+    display: flex;
+    justify-content: flex-end;
+}
+.intro-img{
+    background-image: url(img/img3.jpg);
+    width: 965px;
+    height: 543px;
+}
+.intro .intro-text{
+    position: absolute;
+    font-size: 42px;
+    right: 950px;
+    top: 220px;
+}
+.intro-contacts{
+    background-color: rgb(255, 219, 16);
+    max-width: 590px;
+    position: absolute;
+    right: 410px;
+    top: 540px;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 50px;
+}
+.intro-contacts i{
+    color: #FFF;
+    margin-right: 30px;
+}
+.intro-contacts p{
+    font-size: 18px;
+    margin-right: 60px;
+}
+
+
 
 
 @media screen and (max-width: 765px){ /* конопка меню при max-width: 765px */
@@ -80,7 +121,9 @@ display: none;
         height: 0;
         transition: height .3s linear;
     }
-    .menu li{               /* li елементы не становятся по центру */
+
+                   /* li елементы не становятся по центру */
+     .menu li{
          display: flex;
          align-self: center;
          width: 95%;
@@ -101,5 +144,34 @@ display: none;
     .menu li a.contacts{
         margin-right: 0px;
     }
-    
-}
+
+    .intro{
+        margin-top: 0;
+        display: block;
+        max-width: 100%;
+    }
+    .intro-img{
+        background-position: bottom 0px right 370px;
+    }
+    .intro .intro-text{
+        position: relative;
+        font-size: 25px;
+        right: -10px;
+        top: 40px;
+        text-outline: 95px;
+    }
+    .intro .intro-contacts{
+        right: 0;
+        top: 0px;
+        text-outline: -60px;
+        padding: 20px 10px;
+        position: relative;
+    }
+    .intro-contacts i {
+        margin-right: 10px;
+    }
+    .intro-contacts p{
+        font-size: 13px;
+        margin-right: 0;
+    }
+} 
