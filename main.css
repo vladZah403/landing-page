@@ -1,9 +1,105 @@
-.parallax {
-    background-image: url("1.jpg");
-    min-height: 700px;
-    max-width: auto;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+body, html{
+    overflow-x: hidden;
+}
+nav{
+    margin: auto;
+    max-width: 1100px;
+    width: 100%;
+}
+#checkbox-menu,
+.toggle{
+display: none;
+}
+.menu{
+    padding: 0;
+    margin: 0;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+.menu li a {
+    color: black;
+    text-decoration: none;
+    align-self: center ;
+    font-size: 15px;
+    padding: 10px 15px;
+    transition: background .2s linear;
+}
+.menu li a:hover{
+    background: rgb(255, 219, 16);
+    border-radius: 6px;
+
+}
+.menu li a.logo{
+    font-size: 25px;
+    margin-right: 240px;
+}
+.menu li a.contacts{
+    margin-right: 100px;
+}
+
+
+@media screen and (max-width: 765px){ /* конопка меню при max-width: 765px */
+    .toggle{
+        clear: both;
+        display: block;
+        text-align: center;
+        font-size: 14px;
+        line-height: 40px;
+        width: 100%;
+        color: black;
+        background: rgb(255, 219, 16);
+        transition: all .1s linear;
+    }
+    .toggle:hover{
+        background:rgb(231, 202, 34) ;
+    }
+    #checkbox-menu:checked + label .touch li{
+        opacity: 1;
+        visibility: visible;
+        transition: all .7s linear;
+
+    }
+    #checkbox-menu:checked + label .touch{
+        height: 350px;
+
+    }
+    .menu{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: 0;
+        transition: height .3s linear;
+    }
+    .menu li{               /* li елементы не становятся по центру */
+         display: flex;
+         align-self: center;
+         width: 95%;
+         opacity: o;
+         visibility: hidden; 
+
+    }
+    .menu li a{
+        widows: 95%;
+        text-align: center;
+        align-self: center;
+        align-content: center;
+    }
+    .menu li a.logo{
+        font-size: 21px;
+        margin-right: 0px;
+    }
+    .menu li a.contacts{
+        margin-right: 0px;
+    }
+    
+}
