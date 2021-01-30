@@ -95,15 +95,21 @@ display: none;
 .stats-text{
     padding: 40px;
 }
+
 .stats-text h2{
     font-size: 40px;
     margin-bottom: 70px;
 }
-.stats-text p {
+.stats-text p  {
     margin-top: 50px;
     font-style: 13px;
     line-height: 27px;
 }
+.stats-text img{
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
 .square{
     width: 200px;
     height: 200px;
@@ -366,7 +372,7 @@ display: none;
         margin-top: 0;
         flex-direction: column;
     }
-    .stats-text{
+    .stats-text .stats-text2{
         padding: 10px;
 
     }
@@ -380,9 +386,18 @@ display: none;
         font-size: 13px;
         line-height: 18px;
     }
+    .stats-text img{
+        margin-top: 10px;
+        margin-left: -30px;
+    }
     .square{
         height: 114px;
+        
     }
+    .square-text2{
+        margin-left: 25px;
+    }
+    
 
     /* адапривность карточек*/
     .cards{

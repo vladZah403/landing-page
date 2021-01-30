@@ -32,8 +32,8 @@ stepbl3.onmouseout = function(){
 }
 
 
-document.getElementById("nam1").innerHTML=Math.round(Math.random()* 500);
+document.getElementById("nam1").innerHTML=Math.round(Math.random()* 200);
 document.getElementById("nam2").innerHTML=Math.round(Math.random()* 500);
-document.getElementById("nam3").innerHTML=Math.round(Math.random()* 500);
-document.getElementById("nam4").innerHTML=Math.round(Math.random()* 500);
+document.getElementById("nam3").innerHTML=Math.round(Math.random()* 400);
+document.getElementById("nam4").innerHTML=Math.round(Math.random()* 50);
 
