@@ -332,7 +332,7 @@ display: none;
         margin-right: 0px;
     }
 
-    /*адаптивность блока intro*/
+    /*адаптивность статистики*/
     .intro{
         margin-top: 0;
         display: block;
@@ -383,6 +383,8 @@ display: none;
     .square{
         height: 114px;
     }
+
+    /* адапривность карточек*/
     .cards{
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(6, 1fr);
@@ -415,9 +417,14 @@ display: none;
     .stepblock{
         margin-top: 20px;
     }
-    .steps-text .steps h2 {
-        margin-left: 5%;
+    .steps-text  {
+        margin: 10px;
         margin-bottom: 15px;
+    }
+    .steps h2{
+        margin: 10px;
+        margin-top: 40px;
+        margin-bottom: 20px;
     }
 } 
 @media screen and (max-width: 1400px){
