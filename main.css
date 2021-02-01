@@ -277,9 +277,36 @@ display: none;
     border-bottom: 3px solid black; 
     transition: 1s;
 }
-
-
-
+.serv-container{
+    display: flex;
+    margin-top: 70px;
+}
+.services img{
+    width: 100%;
+    height: auto;
+}
+.serv-img-container{
+    width: 58%;
+}
+.serv-text{
+    width: 42%;
+    margin-left: 3%;
+}
+.serv-text p{
+    margin-bottom: 35px;
+}
+.services h2{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.services p{
+    font-size: 13px;
+    line-height: 20px;
+}
+.services h4{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
 
 @media screen and (max-width: 765px){ /* конопка меню при max-width: 765px */
     .toggle{
