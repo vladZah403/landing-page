@@ -37,3 +37,15 @@ document.getElementById("nam2").innerHTML=Math.round(Math.random()* 500);
 document.getElementById("nam3").innerHTML=Math.round(Math.random()* 400);
 document.getElementById("nam4").innerHTML=Math.round(Math.random()* 50);
 
+let subject = document.getElementById("subject")
+
+subject.onclick = function(){
+
+    let theme =document.getElementById("theme")
+
+    if(theme.getAttribute("href") == "main.css" ){
+        theme.href = "main-dark.css"
+    }else{
+        theme.href = "main.css"
+    }
+}
