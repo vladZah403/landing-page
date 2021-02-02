@@ -4,9 +4,8 @@
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 body, html{
-    background: rgba(17, 16, 16, 0.5);
-    transition: 1s;
     overflow-x: hidden;
+    transition: 1s;
 }
 nav{
     margin: auto;
@@ -28,7 +27,7 @@ display: none;
     list-style: none;
 }
 .menu li a {
-    color: rgb(255, 255, 255);
+    color: black;
     text-decoration: none;
     align-self: center ;
     font-size: 15px;
@@ -36,7 +35,7 @@ display: none;
     transition: background .2s linear;
 }
 .menu li a:hover{
-    background: rgb(73, 90, 247);
+    background: rgb(74, 255, 19);
     border-radius: 6px;
 
 }
@@ -69,9 +68,10 @@ display: none;
     top: 220px;
 }
 .intro-contacts{
-    background-color: rgb(73, 90, 247);
+    background-color:rgb(74, 255, 19);
     max-width: 590px;
     position: absolute;
+    transition: 1s;
     right: 400px;
     top: 540px;
     display: flex;
@@ -99,12 +99,10 @@ display: none;
 }
 
 .stats-text h2{
-    color: #FFF;
     font-size: 40px;
     margin-bottom: 70px;
 }
 .stats-text p  {
-    color: #fff;
     margin-top: 50px;
     font-style: 13px;
     line-height: 27px;
@@ -126,7 +124,7 @@ display: none;
 }
 .stats-square{
     font-size: 40px;
-    color: rgb(255, 221, 26);
+    color: rgb(74, 255, 19);
     margin-bottom: 13px;
 }
 /* стилизация карточек*/
@@ -135,7 +133,6 @@ display: none;
     padding: 60px 0;
 }
 .tour h2{
-    color: #fff;
     margin-bottom: 85px;
     font-size: 40px;
 }
@@ -163,10 +160,9 @@ display: none;
 }
 .card-info .money{
     font-size: 18px;
-    color: rgb(73, 90, 247);
+    color:rgb(74, 255, 19);
 }
 .card-info i{
-    color: #fff;
     margin-left: 10px;
 }
 .card-info span:first-child{
@@ -190,7 +186,7 @@ display: none;
     outline: none;
     padding-left: 62px;
     font-size: 15px;
-    color: rgb(170, 169, 169);
+    color: rgb(216, 216, 216);
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
 }
@@ -198,7 +194,7 @@ display: none;
     width: 115px;
     border: none;
     height: 70px;
-    background-color: rgb(73, 90, 247);
+    background-color:rgb(74, 255, 19);
     font-size: 15px;
     margin-left: -4px;
     border-top-right-radius: 5px;
@@ -206,19 +202,18 @@ display: none;
 }
 .all{
     width: 250px;
-    color: #fff;
     height: 70px;
     border: none;
     border-radius: 4px;
     margin-left: 40px;
-    background-color: rgb(19, 19, 19);
+    background-color: rgb(236, 236, 236);
     margin-top: 52px;
     font-style: 15px;
-    box-shadow: 0 1px 2px rgba(221, 220, 220, 0.5);
+    box-shadow: 0 1px 2px rgba(0,0,0,0.5);
     transition: box-shadow 0.3s ease-in-out;
 }
 .all:hover{
-    box-shadow: 0 5px 15px rgba(226, 223, 223, 0.3);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
 }
 .buttons-search{
     display: flex;
@@ -255,7 +250,7 @@ display: none;
     transition: 3s;
 }
 .stepblock:hover{
-    background-color:  rgb(73, 90, 247);
+    background-color:rgb(74, 255, 19);
     box-shadow: 0 5px 15px rgba(0,0,0,0.3);
     color: white;
 }
@@ -315,6 +310,20 @@ display: none;
     margin-bottom: 10px;
 }
 
+
+
+
+@media screen and (max-width: 1400px){
+    .intro-contacts{
+        right: 140px;
+    }
+    .intro .intro-text{
+        right: 720px;
+    }
+} 
+
+
+
 @media screen and (max-width: 765px){ /* конопка меню при max-width: 765px */
     .toggle{
         clear: both;
@@ -324,11 +333,11 @@ display: none;
         line-height: 40px;
         width: 100%;
         color: black;
-        background:   rgb(73, 90, 247);
+        background:  rgb(74, 255, 19);
         transition: all .1s linear;
     }
     .toggle:hover{
-        background: rgb(73, 90, 247);
+        background:rgb(74, 255, 19);
     }
     #checkbox-menu:checked + label .touch li{
         opacity: 1;
@@ -486,12 +495,4 @@ display: none;
         width: 100%;
     }
     
-} 
-@media screen and (max-width: 1400px){
-    .intro-contacts{
-        right: 140px;
-    }
-    .intro .intro-text{
-        right: 720px;
-    }
 } 

@@ -71,6 +71,7 @@ display: none;
     background-color:rgb(255, 221, 26);
     max-width: 590px;
     position: absolute;
+    transition: 1s;
     right: 400px;
     top: 540px;
     display: flex;
@@ -309,6 +310,20 @@ display: none;
     margin-bottom: 10px;
 }
 
+
+
+
+@media screen and (max-width: 1400px){
+    .intro-contacts{
+        right: 140px;
+    }
+    .intro .intro-text{
+        right: 720px;
+    }
+} 
+
+
+
 @media screen and (max-width: 765px){ /* конопка меню при max-width: 765px */
     .toggle{
         clear: both;
@@ -480,12 +495,4 @@ display: none;
         width: 100%;
     }
     
-} 
-@media screen and (max-width: 1400px){
-    .intro-contacts{
-        right: 140px;
-    }
-    .intro .intro-text{
-        right: 720px;
-    }
 } 
