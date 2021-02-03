@@ -35,7 +35,7 @@ display: none;
     transition: background .2s linear;
 }
 .menu li a:hover{
-    background: rgb(74, 255, 19);
+    background: rgb(64, 196, 82);
     border-radius: 6px;
 
 }
@@ -68,7 +68,7 @@ display: none;
     top: 220px;
 }
 .intro-contacts{
-    background-color:rgb(74, 255, 19);
+    background-color:rgb(64, 196, 82);
     max-width: 590px;
     position: absolute;
     transition: 1s;
@@ -124,7 +124,7 @@ display: none;
 }
 .stats-square{
     font-size: 40px;
-    color: rgb(74, 255, 19);
+    color: rgb(64, 196, 82);
     margin-bottom: 13px;
 }
 /* стилизация карточек*/
@@ -160,7 +160,7 @@ display: none;
 }
 .card-info .money{
     font-size: 18px;
-    color:rgb(74, 255, 19);
+    color:rgb(64, 196, 82);
 }
 .card-info i{
     margin-left: 10px;
@@ -194,7 +194,7 @@ display: none;
     width: 115px;
     border: none;
     height: 70px;
-    background-color:rgb(74, 255, 19);
+    background-color:rgb(64, 196, 82);
     font-size: 15px;
     margin-left: -4px;
     border-top-right-radius: 5px;
@@ -250,7 +250,7 @@ display: none;
     transition: 3s;
 }
 .stepblock:hover{
-    background-color:rgb(74, 255, 19);
+    background-color:rgb(64, 196, 82);
     box-shadow: 0 5px 15px rgba(0,0,0,0.3);
     color: white;
 }
@@ -333,11 +333,11 @@ display: none;
         line-height: 40px;
         width: 100%;
         color: black;
-        background:  rgb(74, 255, 19);
+        background:  rgb(64, 196, 82);
         transition: all .1s linear;
     }
     .toggle:hover{
-        background:rgb(74, 255, 19);
+        background:rgb(64, 196, 82);
     }
     #checkbox-menu:checked + label .touch li{
         opacity: 1;
