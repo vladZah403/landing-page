@@ -31,6 +31,22 @@ stepbl3.onmouseout = function(){
     stepbrdr3.style.borderBottom = "3px solid black"
 }
 
+let subject1 = document.getElementById("subject");
+let wite = document.getElementById("wite");
+
+subject1.onmouseover = function(){
+    wite.style.color = "#fff"
+}
+
+subject1.onmouseout = function(){
+
+    if(theme.getAttribute("href") == "main.css" ){
+        wite.style.color = "#FFDD1A"
+    }else{
+        wite.style.color = "#45C452"
+    }
+   
+}
 
 document.getElementById("nam1").innerHTML=Math.round(Math.random()* 200);
 document.getElementById("nam2").innerHTML=Math.round(Math.random()* 500);

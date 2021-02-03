@@ -46,6 +46,11 @@ display: none;
 .menu li a.contacts{
     margin-right: 100px;
 }
+.fa-circle{
+    color: rgb(255, 221, 26);
+    transition: 1.5s;
+}
+
 .wrapper{
     margin: 0 auto;
     max-width: 1100px;
