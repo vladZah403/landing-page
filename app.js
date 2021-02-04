@@ -32,18 +32,20 @@ stepbl3.onmouseout = function(){
 }
 
 let subject1 = document.getElementById("subject");
-let wite = document.getElementById("wite");
+let white = document.getElementById("white");
 
 subject1.onmouseover = function(){
-    wite.style.color = "#fff"
+    white.style.color = "#fff"
 }
 
 subject1.onmouseout = function(){
 
     if(theme.getAttribute("href") == "main.css" ){
-        wite.style.color = "#FFDD1A"
-    }else{
-        wite.style.color = "#45C452"
+        white.style.color = "#FFDD1A"
+    }else if(theme.getAttribute("href") == "main-green.css"){
+        white.style.color = "#45C452"
+    }else if(theme.getAttribute("href") == "main-red.css"){
+        white.style.color = "#E23C3C"
     }
    
 }
@@ -60,8 +62,12 @@ subject.onclick = function(){
     let theme =document.getElementById("theme")
 
     if(theme.getAttribute("href") == "main.css" ){
-        theme.href = "main-dark.css"
-    }else{
+        theme.href = "main-green.css"
+    } else if(theme.getAttribute("href") == "main-green.css"){
+        theme.href = "main-red.css"
+    }else if(theme.getAttribute("href") == "main-red.css") {
         theme.href = "main.css"
     }
+    
+   
 }

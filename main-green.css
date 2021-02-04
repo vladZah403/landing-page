@@ -46,9 +46,9 @@ display: none;
 .menu li a.contacts{
     margin-right: 100px;
 }
-.fa-circle{
+.fa-firefox{
     color: rgb(64, 196, 82);
-    transition: 1.5s;
+    transition: 2s;
 }
 .wrapper{
     margin: 0 auto;
