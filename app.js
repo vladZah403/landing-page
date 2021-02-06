@@ -42,10 +42,13 @@ subject1.onmouseout = function(){
 
     if(theme.getAttribute("href") == "main.css" ){
         white.style.color = "#FFDD1A"
+        white.style.transition = "2s"
     }else if(theme.getAttribute("href") == "main-green.css"){
         white.style.color = "#45C452"
+        white.style.transition = "2s"
     }else if(theme.getAttribute("href") == "main-red.css"){
         white.style.color = "#E23C3C"
+        white.style.transition = "2s"
     }
    
 }
