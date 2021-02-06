@@ -12,7 +12,7 @@ nav{
     max-width: 1100px;
     width: 100%;
 }
-#checkbox-menu,
+#checkbox-menu, 
 .toggle{
 display: none;
 }
@@ -314,9 +314,71 @@ display: none;
     font-size: 20px;
     margin-bottom: 10px;
 }
+.add{
+    padding-bottom: 100px;
+    padding-top: 90px;
 
+}
+.add-line{
+    display: flex;
+}
+.location{
+    font-size: 18px;
+    padding: 20px 67px 25px 45px;
+    background: rgb(255, 221, 26);
+    display: inline-block;
 
+}
+.location i {
+    margin-right: 30px;
+    font-size: 25px;
+    position: relative;
+    top: 5px;
+    color: #FFF;
+}
+.location-greece{
+    position: relative;
+    left: 150px;
+    bottom: 40px;
+}
+.location-spain{
+    position: relative;
+    left: 280px;
+    bottom: 40px;
+}
+.add-line h3{
+    font-size: 25px;
+    margin-top: 75px;
+    margin-bottom: 40px;
+    margin-left: 130px;
+}
+.add-line p{
+    font-size: 13px;
+    line-height: 30px;
+    margin-left: 125px;
+}
 
+.add-line-right p{
+    margin-left: 0;
+    margin-right: 130px;
+}
+.add-line h3:first-of-type{
+    margin-top: 25px;
+}
+.show-more{
+    font-size: 18px;
+    background: rgb(218, 221, 47);
+    padding: 30px 50px 30px 50px;
+    display: inline-block;
+    margin-left: 130px;
+    color: #FFF;
+    margin-top: 60px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.5);
+    transition: box-shadow 0.3s ease-in-out;
+}
+.show-more:hover{
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
 
 @media screen and (max-width: 1400px){
     .intro-contacts{
@@ -499,5 +561,34 @@ display: none;
     .serv-text{
         width: 100%;
     }
-    
+    .add-line{
+        flex-direction: column;   
+    }
+    .location{
+        font-size: 15px;
+        padding: 15px 10px 15px 11px;
+    }
+
+    .location-spain{
+        left: 100px;
+    }
+    .add-line h3{
+        font-size: 25px;
+        margin-top: 75px;
+        margin-bottom: 40px;
+        margin-left: 5%;
+    }
+    .add-line p{
+        margin-left: 5%;
+    }
+    .add-line-right p{
+        margin-left: 5%;
+        margin-right: 0;
+    }
+    .show-more{
+        font-size: 15px;
+        padding: 20px 40px 20px 35px;
+        margin-left: 15%;
+        margin-top: 20px;
+    }
 } 
