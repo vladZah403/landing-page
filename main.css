@@ -40,8 +40,8 @@ display: none;
 
 }
 .menu li a.logo{
-    font-size: 25px;
-    margin-right: 240px;
+    font-size: 20px;
+    margin-right: 170px;
 }
 .menu li a.contacts{
     margin-right: 100px;
@@ -379,6 +379,69 @@ display: none;
 .show-more:hover{
     box-shadow: 0 5px 15px rgba(0,0,0,0.3);
 }
+
+footer{
+    background: rgb(47, 67, 156);
+    color: #FFF;
+    padding-top: 50px;
+    padding-bottom: 80px;
+}
+.footer-block{
+    display: flex;
+    justify-content: space-between;
+}
+.footer-block h3 {
+    font-size: 30px;
+}
+.footer-search input[type=text]{
+    width: 442px;
+    height: 70px;
+    color: rgb(37, 36, 36);
+    padding-left: 30px;
+    font-size: 15px;
+}
+.footer-search {
+    padding-bottom: 10px;
+}
+hr{
+    opacity: 0.7;
+    margin-top: 47px;
+    margin-bottom: 70px;
+}
+#map{
+    width: 300px;
+    height: 300px;
+}
+.footer-links{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 80px;
+}
+.footer-link{
+    display: flex;
+    flex-direction: column;
+}
+.footer-link p{
+    text-transform: uppercase;
+    font-size: 20px;
+    margin-bottom: 35px;
+}
+.footer-link a , span{
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    margin-bottom: 20px;
+}
+.footer-link a:hover{
+    opacity: 0.6;
+}
+hr.hr-bottom{
+    margin-top: 130px;
+    margin-bottom: 10px;
+}
+
+
+
 
 @media screen and (max-width: 1400px){
     .intro-contacts{
