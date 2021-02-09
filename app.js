@@ -75,13 +75,13 @@ subject.onclick = function(){
    
 }
 
-let map;
+// let map;
 
-    DG.then(function () {
-        map = DG.map('map', {
-            center: [53.55, 9.99],
-            zoom: 8
-        });
+//     DG.then(function () {
+//         map = DG.map('map', {
+//             center: [53.55, 9.99],
+//             zoom: 8
+//         });
 
-        DG.marker([53.55, 9.99]).addTo(map);
-    });
+//         DG.marker([53.55, 9.99]).addTo(map);
+//     });

@@ -411,8 +411,8 @@ hr{
     margin-bottom: 70px;
 }
 #map{
-    width: 300px;
-    height: 300px;
+    width: 400px;
+    height: 400px;
 }
 .footer-links{
     display: flex;
@@ -692,6 +692,10 @@ hr.hr-bottom{
     .footer-info-block{
         flex-direction: column;
         text-align: center;
+    }
+    #map{
+        width: 300px;
+        height: 300px;
     }
     
 } 
