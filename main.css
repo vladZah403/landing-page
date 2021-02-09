@@ -426,7 +426,7 @@ hr{
     font-size: 20px;
     margin-bottom: 35px;
 }
-.footer-link a , span{
+.footer-link a , span.phone{
     color: white;
     text-decoration: none;
     font-size: 17px;
@@ -461,6 +461,15 @@ hr.hr-bottom{
     }
     .intro .intro-text{
         right: 720px;
+    }
+} 
+
+@media screen and (max-width: 1280px){
+    .intro-contacts{
+        right: 80px;
+    }
+    .intro .intro-text{
+        right: 620px;
     }
 } 
 
