@@ -41,10 +41,14 @@ display: none;
 }
 .menu li a.logo{
     font-size: 20px;
-    margin-right: 170px;
+    margin-right: 140px;
 }
 .menu li a.contacts{
-    margin-right: 100px;
+    margin-right: 90px;
+}
+span #color{
+    color: blue;
+    transition:  2s;
 }
 .fa-circle{
     color: rgb(255, 221, 26);
@@ -319,9 +323,11 @@ display: none;
     padding-top: 90px;
 
 }
+
 .add-line{
     display: flex;
 }
+
 .location{
     font-size: 18px;
     padding: 20px 67px 25px 45px;
@@ -329,6 +335,7 @@ display: none;
     display: inline-block;
 
 }
+
 .location i {
     margin-right: 30px;
     font-size: 25px;

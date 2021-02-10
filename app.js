@@ -7,6 +7,8 @@ let stepbrdr2 = document.getElementById("stepbrdr2");
 let stepbl3 = document.getElementById("stepbl3");
 let stepbrdr3 = document.getElementById("stepbrdr3");
 
+
+
 stepbl1.onmouseover = function(){
     stepbrdr1.style.borderBottom = "3px solid white"
 }
@@ -46,9 +48,11 @@ subject1.onmouseout = function(){
     }else if(theme.getAttribute("href") == "main-green.css"){
         white.style.color = "#45C452"
         white.style.transition = "3s"
+        color.style.transition = '2s'
     }else if(theme.getAttribute("href") == "main-red.css"){
         white.style.color = "#E23C3C"
         white.style.transition = "3s"
+        color.style.transition = '2s'
     }
    
 }
@@ -63,17 +67,23 @@ let subject = document.getElementById("subject")
 subject.onclick = function(){
 
     let theme =document.getElementById("theme")
+    let color =document.getElementById('color')
 
     if(theme.getAttribute("href") == "main.css" ){
         theme.href = "main-green.css"
+        color.innerHTML = ' Green'
     } else if(theme.getAttribute("href") == "main-green.css"){
         theme.href = "main-red.css"
+        color.innerHTML = ' Red'
     }else if(theme.getAttribute("href") == "main-red.css") {
         theme.href = "main.css"
+        color.innerHTML = ' Yellow '
     }
     
    
 }
+
+
 
 // let map;
 

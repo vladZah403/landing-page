@@ -20,9 +20,9 @@
                 <li><a href="#">About</a></li>
                 <li><a href="#tours">Tours </a></li>
                 <li><a href="#How it Work">How it Work</a></li>
-                <li>
+                <li id="app">
                     <a href="#" id="subject">
-                        <i class="fas fa-circle  " id="white"></i> Subject
+                        <i class="fas fa-circle  " id="white"></i><span id="color"> Yellow</span>  Theme
                        
                     </a>
                 </li>
@@ -187,14 +187,16 @@
                         </div>
                     </div>
                 </div>
-                
+                <div id="card">
+
+                </div>
             </div>
             <div class="buttons-search">
                 <form action="">
                     <input type="text" placeholder="Search Locations">
                     <input type="submit" value="Search">
                 </form>
-                <button class="all">View All Tours</button>
+                <button class="all" id="all">View All Tours</button>
             </div>
         </div>
     </section>
@@ -359,7 +361,7 @@
      
     </div>
 </footer>
-
+    <script src="card.js"></script>
     <script src="https://maps.api.2gis.ru/2.0/loader.js?pkg=full"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="script.js"></script>
