@@ -1,6 +1,53 @@
 let all = document.getElementById('all');
 let card = document.getElementById('card');
 
+let cardJson = [
+    {
+        "city": "Athens",
+        "img": "img/aten.jpg",
+        "price": 800,
+        "day": 5,
+        "distance": 2.200
+    },
+    {
+        "city": "Vilnius",
+        "img": "img/17.jpg",
+        "price": 600,
+        "day": 6,
+        "distance": 560
+    },
+    {
+        "city": "Prague",
+        "img": "img/Prague.jpg",
+        "price": 250,
+        "day": 4,
+        "distance": 400
+    },
+    {
+        "city": "Sydney",
+        "img": "img/Sydney.jpg",
+        "price": 1.700,
+        "day": 6,
+        "distance": 5.700
+    },
+    {
+        "city": "Lisbon",
+        "img": "img/lisbon.jpg",
+        "price": 600,
+        "day": 7,
+        "distance": 600
+    },
+    {
+        "city": "Chicago",
+        "img": "img/chikago (2).jpg",
+        "price": 2.300,
+        "day": 5,
+        "distance": 3.200
+    }
+    ]
+cardJson =JSON.parse(cardJson);
+console.log(cardJson[2])
+
 all.onclick = function card1(){
     if(!card.classList.contains('clicked')){
         card.classList.add('clicked');
@@ -79,7 +126,7 @@ all.onclick = function card1(){
                             <div class="money"><a href="">$600</a></div>
                             <div class="info">
                                 <span><i class="far fa-calendar-alt"></i> 7 day</span>
-                                <span><i class="fas fa-route"></i> 1,300 km</span>
+                                <span><i class="fas fa-route"></i> 600 km</span>
                             </div>
 
                         </div>
