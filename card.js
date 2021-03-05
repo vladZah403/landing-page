@@ -1,54 +1,8 @@
 let all = document.getElementById('all');
 let card = document.getElementById('card');
 
-let cardJson = [
-    {
-        "city": "Athens",
-        "img": "img/aten.jpg",
-        "price": 800,
-        "day": 5,
-        "distance": 2.200
-    },
-    {
-        "city": "Vilnius",
-        "img": "img/17.jpg",
-        "price": 600,
-        "day": 6,
-        "distance": 560
-    },
-    {
-        "city": "Prague",
-        "img": "img/Prague.jpg",
-        "price": 250,
-        "day": 4,
-        "distance": 400
-    },
-    {
-        "city": "Sydney",
-        "img": "img/Sydney.jpg",
-        "price": 1.700,
-        "day": 6,
-        "distance": 5.700
-    },
-    {
-        "city": "Lisbon",
-        "img": "img/lisbon.jpg",
-        "price": 600,
-        "day": 7,
-        "distance": 600
-    },
-    {
-        "city": "Chicago",
-        "img": "img/chikago (2).jpg",
-        "price": 2.300,
-        "day": 5,
-        "distance": 3.200
-    }
-    ]
-cardJson =JSON.parse(cardJson);
-console.log(cardJson[2])
-
 all.onclick = function card1(){
+   
     if(!card.classList.contains('clicked')){
         card.classList.add('clicked');
         all.innerHTML = 'Hide All Tours'
@@ -56,7 +10,7 @@ all.onclick = function card1(){
     <div class="card">
                     <img src="img/aten.jpg" alt="">
                     <div class="card-container">
-                        <h3>Athens</h3>
+                        <h3 >Athens</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                         <div class="card-info">
                             <div class="money"><a href="">$800</a></div>
@@ -67,8 +21,7 @@ all.onclick = function card1(){
 
                         </div>
                     </div>
-                </div>
-
+                </div>   
                 <div class="card">
                 <img src="img/17.jpg" alt="">
                 <div class="card-container">
@@ -80,12 +33,12 @@ all.onclick = function card1(){
                             <span><i class="far fa-calendar-alt"></i> 6 day</span>
                             <span><i class="fas fa-route"></i> 560 km</span>
                         </div>
-
+                
                     </div>
                 </div>
-            </div>
-
-            <div class="card">
+                </div>
+                
+                <div class="card">
                     <img src="img/Prague.jpg" alt="">
                     <div class="card-container">
                         <h3>Prague</h3>
@@ -96,11 +49,11 @@ all.onclick = function card1(){
                                 <span><i class="far fa-calendar-alt"></i> 4 day</span>
                                 <span><i class="fas fa-route"></i> 400 km</span>
                             </div>
-
+                
                         </div>
                     </div>
                 </div>
-
+                
                 <div class="card">
                     <img src="img/Sydney.jpg" alt="">
                     <div class="card-container">
@@ -112,11 +65,11 @@ all.onclick = function card1(){
                                 <span><i class="far fa-calendar-alt"></i> 6 day</span>
                                 <span><i class="fas fa-route"></i> 5,700 km</span>
                             </div>
-
+                
                         </div>
                     </div>
                 </div>
-
+                
                 <div class="card">
                     <img src="img/lisbon.jpg" alt="">
                     <div class="card-container">
@@ -128,11 +81,11 @@ all.onclick = function card1(){
                                 <span><i class="far fa-calendar-alt"></i> 7 day</span>
                                 <span><i class="fas fa-route"></i> 600 km</span>
                             </div>
-
+                
                         </div>
                     </div>
                 </div>
-
+                
                 <div class="card">
                     <img src="img/chikago (2).jpg" alt="">
                     <div class="card-container">
@@ -144,11 +97,10 @@ all.onclick = function card1(){
                                 <span><i class="far fa-calendar-alt"></i> 5 day</span>
                                 <span><i class="fas fa-route"></i> 3,200 km</span>
                             </div>
-
+                
                         </div>
                     </div>
-                </div>
-
+                </div> 
     `
     }else{
         card.classList.remove('clicked')
@@ -157,4 +109,58 @@ all.onclick = function card1(){
     }
     
 }
+
+
+
+//  for(let key in cardJson){
+//         const el = document.getElementById(city1)
+//         if(el){
+//             el.innerHTML =(cardJson(key))
+//         }
+//     }
+
+// let cardJson = [
+//     {
+//         city: "Athens",
+//         img: "img/aten.jpg",
+//         price: 800,
+//         day: 5,
+//         distance: 2.200
+//     },
+    // {
+    //     city: "Vilnius",
+    //     img: "img/17.jpg",
+    //     price: 600,
+    //     day: 6,
+    //     distance: 560
+    // },
+    // {
+    //     "city": "Prague",
+    //     "img": "img/Prague.jpg",
+    //     "price": 250,
+    //     "day": 4,
+    //     "distance": 400
+    // },
+    // {
+    //     "city": "Sydney",
+    //     "img": "img/Sydney.jpg",
+    //     "price": 1.700,
+    //     "day": 6,
+    //     "distance": 5.700
+    // },
+    // {
+    //     "city": "Lisbon",
+    //     "img": "img/lisbon.jpg",
+    //     "price": 600,
+    //     "day": 7,
+    //     "distance": 600
+    // },
+    // {
+    //     "city": "Chicago",
+    //     "img": "img/chikago (2).jpg",
+    //     "price": 2.300,
+    //     "day": 5,
+    //     "distance": 3.200
+    // }
+    // ]
 

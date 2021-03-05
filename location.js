@@ -1,8 +1,9 @@
-let show = document.getElementById('show');
+let show = document.querySelector('.show-more');
 let line = document.getElementById('line');
 let line2 = document.getElementById('line2');
 
 show.onclick = function(){
+    show.classList.add('button_on')
     if(!line.classList.contains('tur')){
         line.classList.add('tur');
   line.innerHTML =  `
