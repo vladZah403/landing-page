@@ -1,6 +1,6 @@
-let show = document.querySelector('.show-more');
-let line = document.getElementById('line');
-let line2 = document.getElementById('line2');
+let show = document.querySelector('.show-more'),
+    line = document.getElementById('line'),
+    line2 = document.getElementById('line2');
 
 show.onclick = function(){
     show.classList.add('button_on')
@@ -14,7 +14,7 @@ show.onclick = function(){
       suscipit asperiores, hic modi error eligendi. Nostrum minima dolorem, ex rem, quasi amet eius quod rerum numquam, fugit delectus recusandae.</P>
 </div>
 <div class="line-img" data-aos="zoom-in-up">
-  <img src="img/Italia.jpg" alt="">
+  <img src="style/img/Italia.jpg" alt="">
 <div class="location location-spain">
   <i class="fas fa-map-marker-alt"></i>
   Italia
@@ -24,7 +24,7 @@ show.onclick = function(){
 `
 line2.innerHTML =`
 <div class="line-img" data-aos="zoom-in-up">
-        <img src="img/Glav.jpg" alt="">
+        <img src="style/img/Glav.jpg" alt="">
     <div class="location location-greece">
         <i class="fas fa-map-marker-alt"></i>
         Madagascar

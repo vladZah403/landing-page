@@ -42,14 +42,14 @@ subject1.onmouseover = function(){
 
 subject1.onmouseout = function(){
 
-    if(theme.getAttribute("href") == "main.css" ){
+    if(theme.getAttribute("href") == "style/main.css" ){
         white.style.color = "#FFDD1A"
         white.style.transition = "3s"
-    }else if(theme.getAttribute("href") == "main-green.css"){
+    }else if(theme.getAttribute("href") == "style/main-green.css"){
         white.style.color = "#45C452"
         white.style.transition = "3s"
         color.style.transition = '2s'
-    }else if(theme.getAttribute("href") == "main-red.css"){
+    }else if(theme.getAttribute("href") == "style/main-red.css"){
         white.style.color = "#E23C3C"
         white.style.transition = "3s"
         color.style.transition = '2s'
@@ -69,14 +69,14 @@ subject.onclick = function(){
     let theme =document.getElementById("theme")
     let color =document.getElementById('color')
 
-    if(theme.getAttribute("href") == "main.css" ){
-        theme.href = "main-green.css"
+    if(theme.getAttribute("href") == "style/main.css" ){
+        theme.href = "style/main-green.css"
         color.innerHTML = ' Green'
-    } else if(theme.getAttribute("href") == "main-green.css"){
-        theme.href = "main-red.css"
+    } else if(theme.getAttribute("href") == "style/main-green.css"){
+        theme.href = "style/main-red.css"
         color.innerHTML = ' Red'
-    }else if(theme.getAttribute("href") == "main-red.css") {
-        theme.href = "main.css"
+    }else if(theme.getAttribute("href") == "style/main-red.css") {
+        theme.href = "style/main.css"
         color.innerHTML = ' Yellow '
     }
     
