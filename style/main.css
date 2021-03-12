@@ -511,7 +511,7 @@ hr.hr-bottom{
     margin: 15% auto;
     padding: 20px;
     border: 1px solid #888;
-    width: 40%;
+    width: 30%;
     z-index: 99999;
 }
 .modal .modal_content .close_modal_window {
@@ -523,6 +523,10 @@ hr.hr-bottom{
 }
 .close_modal_window {
     bottom: 15px;
+}
+.modal_text{
+    text-align: center;
+    font-size: 25px;
 }
 
 @media screen and (max-width: 1400px){
