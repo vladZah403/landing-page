@@ -781,5 +781,8 @@ hr.hr-bottom{
         width: 300px;
         height: 300px;
     }
+    .modal .modal_content{
+        width: 70%;
+    }
     
 } 
