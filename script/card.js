@@ -1,14 +1,18 @@
 let all = document.getElementById('all');
 let card = document.getElementById('card');
-
+let card2 = document.getElementsByClassName('card')
+ 
+card2.onclick= function turn(){
+ 
+}
 all.onclick = function card1(){
    
     if(!card.classList.contains('clicked')){
         card.classList.add('clicked');
         all.innerHTML = 'Hide All Tours'
     card.innerHTML =`
-    <div class="card">
-                    <img src="style/img/aten.jpg" alt="">
+    <div class="card" >
+                    <img  class="card-img" src="style/img/aten.jpg" alt="">
                     <div class="card-container">
                         <h3 >Athens</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -23,7 +27,7 @@ all.onclick = function card1(){
                     </div>
                 </div>   
                 <div class="card">
-                <img src="style/img/17.jpg" alt="">
+                <img class="card-img" src="style/img/17.jpg" alt="">
                 <div class="card-container">
                     <h3>Vilnius</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -39,7 +43,7 @@ all.onclick = function card1(){
                 </div>
                 
                 <div class="card">
-                    <img src="style/img/Prague.jpg" alt="">
+                    <img class="card-img" src="style/img/Prague.jpg" alt="">
                     <div class="card-container">
                         <h3>Prague</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -55,7 +59,7 @@ all.onclick = function card1(){
                 </div>
                 
                 <div class="card">
-                    <img src="style/img/Sydney.jpg" alt="">
+                    <img class="card-img" src="style/img/Sydney.jpg" alt="">
                     <div class="card-container">
                         <h3>Sydney</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -71,7 +75,7 @@ all.onclick = function card1(){
                 </div>
                 
                 <div class="card">
-                    <img src="style/img/lisbon.jpg" alt="">
+                    <img class="card-img" src="style/img/lisbon.jpg" alt="">
                     <div class="card-container">
                         <h3>Lisbon</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -87,7 +91,7 @@ all.onclick = function card1(){
                 </div>
                 
                 <div class="card">
-                    <img src="style/img/chikago (2).jpg" alt="">
+                    <img class="card-img" src="style/img/chikago (2).jpg" alt="">
                     <div class="card-container">
                         <h3>Chicago</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>

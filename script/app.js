@@ -83,8 +83,16 @@ subject.onclick = function(){
    
 }
 
+// let share1 = document.getElementById("share");
+// let twit = document.getElementById("twit");
+// let face = document.getElementById("face");
+// let inst = document.getElementById("inst");
 
-
+// share1.onmouseover = function(){
+//     twit.style.position = "fixed"
+//     face.style.position = "fixed"
+//     inst.style.position = "fixed"
+// }
 
 // let map;
 

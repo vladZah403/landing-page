@@ -140,11 +140,16 @@ display: none;
     margin-bottom: 85px;
     font-size: 40px;
 }
+.card-img{
+    border-top-left-radius: 8px ;
+    border-top-right-radius: 8px ;
+}
 .card{
     max-width: 348px;
     background: rgb(255, 255, 255);
     box-shadow: 0 1px 2px rgba(0,0,0,0.15);
     transition: box-shadow 0.3s ease-in-out;
+    border-radius: 8px;
     
 }
 .card:hover{
@@ -261,6 +266,7 @@ display: none;
     box-shadow: 0 0px 7px rgba(0,0,0,0.15);
     overflow: hidden;
     transition: box-shadow 0.3s ease-in-out;
+    border-radius: 8px;
 }
 .stepblock .step-num{
     font-size: 200px;
