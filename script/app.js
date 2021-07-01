@@ -82,6 +82,17 @@ subject.onclick = function(){
     
    
 }
+let like = document.getElementById('like');
+like.onclick = function(){
+
+if(!like.classList.contains('fas')){
+    like.classList.add('fas');
+    like.classList.remove('far');
+}else{
+    like.classList.remove('fas');
+    like.classList.add('far')
+}
+}
 
 // let share1 = document.getElementById("share");
 // let twit = document.getElementById("twit");
