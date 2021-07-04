@@ -83,120 +83,27 @@ subject.onclick = function(){
    
 }
 
+let a = Math.floor((Math.random()*400)+1);
+    
 
-let a = Math.round(Math.random()* 200);
-let b = Math.round(Math.random()* 300);
-let c = Math.round(Math.random()* 100);
-like1 = document.getElementById('like1')
-like1.onclick = function () {
-    if(!like1.classList.contains('fas')){
-        like1.classList.add('fas');
-        like1.classList.remove('far');
-        like1.style.color = 'red'
-        like1.style.transition = '1s'
-    document.getElementById('nam-like1').innerHTML = `${a+1}`
+function like(el) {
+   
+    if(!document.getElementById(`l${el}`).classList.contains('fas')){
+        document.getElementById(`l${el}`).classList.add('fas');
+        document.getElementById(`l${el}`).classList.remove('far');
+        document.getElementById(`l${el}`).style.color = 'red'
+        document.getElementById(`l${el}`).style.transition = '1s'
+    document.getElementById(`nam-like${el}`).innerHTML = `${a+1}`
     
     }else{
-        like1.classList.remove('fas');
-        like1.classList.add('far')
-        like1.style.color = "black";
-        like1.style.transition = '1s'
-        document.getElementById('nam-like1').innerHTML = `${a}`
+        document.getElementById(`l${el}`).classList.remove('fas');
+        document.getElementById(`l${el}`).classList.add('far')
+        document.getElementById(`l${el}`).style.color = "black";
+        document.getElementById(`l${el}`).style.transition = '1s'
+        document.getElementById(`nam-like${el}`).innerHTML = `${a}`
     }
     
     }
-
-like2 = document.getElementById('like2')
-like2.onclick = function () {
-    if(!like2.classList.contains('fas')){
-        like2.classList.add('fas');
-        like2.classList.remove('far');
-        like2.style.color = 'red'
-        like2.style.transition = '1s'
-        document.getElementById('nam-like2').innerHTML = `${b+1}`
-    }else{
-        like2.classList.remove('fas');
-        like2.classList.add('far')
-        like2.style.color = "black";
-        like2.style.transition = '1s'
-        document.getElementById('nam-like2').innerHTML = `${b}`
-    }
-    
-    }
-
-like3 = document.getElementById('like3')
-like3.onclick = function () {
-if(!like3.classList.contains('fas')){
-    like3.classList.add('fas');
-    like3.classList.remove('far');
-    like3.style.color = 'red'
-    like3.style.transition = '1s'
-    document.getElementById('nam-like3').innerHTML = `${c+1}`
-}else{
-    like3.classList.remove('fas');
-    like3.classList.add('far')
-    like3.style.color = "black";
-    like3.style.transition = '1s'
-    document.getElementById('nam-like3').innerHTML = `${c}`
-}
-}
-let e = Math.round(Math.random()* 400);
-let f = Math.round(Math.random()* 260);
-let g = Math.round(Math.random()* 80);
-like4 = document.getElementById('like4')
-like4.onclick = function () {
-    if(!like4.classList.contains('fas')){
-        like4.classList.add('fas');
-        like4.classList.remove('far');
-        like4.style.color = 'red'
-        like4.style.transition = '1s'
-    document.getElementById('nam-like4').innerHTML = `${e+1}`
-    
-    }else{
-        like4.classList.remove('fas');
-        like4.classList.add('far')
-        like4.style.color = "black";
-        like4.style.transition = '1s'
-        document.getElementById('nam-like4').innerHTML = `${e}`
-    }
-    
-    }
-
-like5 = document.getElementById('like5')
-like5.onclick = function () {
-    if(!like5.classList.contains('fas')){
-        like5.classList.add('fas');
-        like5.classList.remove('far');
-        like5.style.color = 'red'
-        like5.style.transition = '1s'
-        document.getElementById('nam-like5').innerHTML = `${f+1}`
-    }else{
-        like5.classList.remove('fas');
-        like5.classList.add('far')
-        like5.style.color = "black";
-        like5.style.transition = '1s'
-        document.getElementById('nam-like5').innerHTML = `${f}`
-    }
-    
-    }
-
-like6 = document.getElementById('like6')
-like6.onclick = function () {
-if(!like6.classList.contains('fas')){
-    like6.classList.add('fas');
-    like6.classList.remove('far');
-    like6.style.color = 'red'
-    like6.style.transition = '1s'
-    document.getElementById('nam-like6').innerHTML = `${g+1}`
-}else{
-    like6.classList.remove('fas');
-    like6.classList.add('far')
-    like6.style.color = "black";
-    like6.style.transition = '1s'
-    document.getElementById('nam-like6').innerHTML = `${g}`
-}
-
-}
 
 
 

@@ -1,10 +1,27 @@
 let all = document.getElementById('all');
 let card = document.getElementById('card');
-let card2 = document.getElementsByClassName('card')
- 
-card2.onclick= function turn(){
- 
+let cards = document.getElementById('cards')
+
+
+for(let i = 0; i<6; i++){
+    cards.innerHTML +=
+`
+<div class="card2">
+<div class="card-photos">
+<img class = "card-img" src="style/img/ital.jpg" alt="">
+</div >
+<div class="like-info">
+ <span class="nam-like" ><i class=" far fa-heart   " onclick="like(${i})" id="l${i}"></i><span id="nam-like${i}"> </span></span>
+ </div>
+</div>
+
+` 
+
 }
+
+
+
+
 all.onclick = function card1(){
    
     if(!card.classList.contains('clicked')){
