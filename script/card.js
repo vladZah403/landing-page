@@ -24,173 +24,44 @@ for(let i = 0; i<6; i++){
 </div>
 
 ` 
-
 }
 
+ 
 
-
-
-   
 all.onclick = function card1(){
    
     if(!card.classList.contains('clicked')){
         card.classList.add('clicked');
-        all.innerHTML = 'Hide All Tours'
-    card.innerHTML =`
+        all.innerHTML = 'Hide All Tours' 
+    for(let i =0; i<6; i++){
+        let city = ["Athens","Vilnius","Prague","Sydney","Lisbon","Chicago"]
+        let img =    ["aten.jpg","17.jpg","Prague.jpg","Sydney.jpg","lisbon.jpg","chikago (2).jpg"]
+        let price =    ['800', '600', '250', '1.700', '600', '2.300']
+        let day =    [5, 6, 4, 6, 7, 5]
+        let distance =    ['2.200', '560', '400', '5.700', '600', '3.200']
+    card.innerHTML +=`
     <div class="card" >
-                    <img  class="card-img" src="style/img/aten.jpg" alt="">
+                    <img  class="card-img" src="style/img/${img[i]}" alt="">
                     <div class="card-container">
-                        <h3 >Athens</h3>
+                        <h3 >${city[i]}</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                         <div class="card-info">
-                            <div class="money"><a href="">$800</a></div>
+                            <div class="money"><a href="">$${price[i]}</a></div>
                             <div class="info">
-                                <span><i class="far fa-calendar-alt"></i> 5 day</span>
-                                <span><i class="fas fa-route"></i> 2,200 km</span>
+                                <span><i class="far fa-calendar-alt"></i> ${day[i]} day</span>
+                                <span><i class="fas fa-route"></i> ${distance[i]} km</span>
                             </div>
 
                         </div>
                     </div>
-                </div> 
-                <div class="card">
-                <img class="card-img" src="style/img/17.jpg" alt="">
-                <div class="card-container">
-                    <h3>Vilnius</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    <div class="card-info">
-                        <div class="money"><a href="">$600</a></div>
-                        <div class="info">
-                            <span><i class="far fa-calendar-alt"></i> 6 day</span>
-                            <span><i class="fas fa-route"></i> 560 km</span>
-                        </div>
-                
-                    </div>
-                </div>
-                </div>
-                
-                <div class="card">
-                    <img class="card-img" src="style/img/Prague.jpg" alt="">
-                    <div class="card-container">
-                        <h3>Prague</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        <div class="card-info">
-                            <div class="money"><a href="">$250</a></div>
-                            <div class="info">
-                                <span><i class="far fa-calendar-alt"></i> 4 day</span>
-                                <span><i class="fas fa-route"></i> 400 km</span>
-                            </div>
-                
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="card">
-                    <img class="card-img" src="style/img/Sydney.jpg" alt="">
-                    <div class="card-container">
-                        <h3>Sydney</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        <div class="card-info">
-                            <div class="money"><a href="">$1,700</a></div>
-                            <div class="info">
-                                <span><i class="far fa-calendar-alt"></i> 6 day</span>
-                                <span><i class="fas fa-route"></i> 5,700 km</span>
-                            </div>
-                
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="card">
-                    <img class="card-img" src="style/img/lisbon.jpg" alt="">
-                    <div class="card-container">
-                        <h3>Lisbon</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        <div class="card-info">
-                            <div class="money"><a href="">$600</a></div>
-                            <div class="info">
-                                <span><i class="far fa-calendar-alt"></i> 7 day</span>
-                                <span><i class="fas fa-route"></i> 600 km</span>
-                            </div>
-                
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="card">
-                    <img class="card-img" src="style/img/chikago (2).jpg" alt="">
-                    <div class="card-container">
-                        <h3>Chicago</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        <div class="card-info">
-                            <div class="money"><a href="">$2,300</a></div>
-                            <div class="info">
-                                <span><i class="far fa-calendar-alt"></i> 5 day</span>
-                                <span><i class="fas fa-route"></i> 3,200 km</span>
-                            </div>
-                
-                        </div>
-                    </div>
-                </div> `
+                </div>` 
     
+    }          
     }else{
         card.classList.remove('clicked')
         card.innerHTML = ''
         all.innerHTML = 'View All Tours'
     }
+        }
     
-}
-
-
-
-//  for(let key in cardJson){
-//         const el = document.getElementById(city1)
-//         if(el){
-//             el.innerHTML =(cardJson(key))
-//         }
-//     }
-
-
- // let cardJson = [
-    //     Athens = {
-    //         city: "Athens",
-    //         img: "aten.jpg",
-    //         price: 800,
-    //         day: 5,
-    //         distance: 2.200
-    //     },
-    //     {
-    //         city: "Vilnius",
-    //         img: "style/img/17.jpg",
-    //         price: 600,
-    //         day: 6,
-    //         distance: 560
-    //     },
-    //     {
-    //         city: "Prague",
-    //         img: "style/img/Prague.jpg",
-    //         price: 250,
-    //         day: 4,
-    //         distance: 400
-    //     },
-    //     {
-    //         city: "Sydney",
-    //         img: "style/img/Sydney.jpg",
-    //         price: 1.700,
-    //         day: 6,
-    //         distance: 5.700
-    //     },
-    //     {
-    //         city: "Lisbon",
-    //         img: "style/img/lisbon.jpg",
-    //         price: 600,
-    //         day: 7,
-    //         distance: 600
-    //     },
-    //     {
-    //         city: "Chicago",
-    //         img: "style/img/chikago (2).jpg",
-    //         price: 2.300,
-    //         day: 5,
-    //         distance: 3.200
-    //     }
-    //     ]
+ 
