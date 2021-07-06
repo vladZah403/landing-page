@@ -5,16 +5,21 @@ let cards = document.getElementById('cards')
 
 for(let i = 0; i<6; i++){
     let name = ['Beast','Cowboy','Hawk','Phantom ','Shooter', 'Gutsy_heart' ];
+    let img = ['ital.jpg','chikag.jpg','iland.jpg','chikag.jpg','iland.jpg','ital.jpg']
     cards.innerHTML +=
 `
 <div class="card2">
 <i class="far fa-user-circle ava"> ${name[i]}</i>
 <div class="card-photos">
-<img  src="style/img/ital.jpg" alt="">
+<img  src="style/img/${img[i]}" alt="">
 </div >
 <div class="like-info">
-
- <span class="nam-like" ><i class=" far fa-heart   " onclick="like(${i})" id="l${i}"></i><span id="nam-like${i}"> </span></span>
+<div class="nam-like" >
+    <i class=" far fa-heart   " onclick="like(${i})" id="l${i}"></i>
+    <span id="nam-like${i}"> </span>
+    
+</div>
+<i class="fas fa-share-alt nam-like"></i>
  </div>
 </div>
 
