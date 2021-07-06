@@ -205,7 +205,10 @@ span #color{
 }
 .nam-like{
     font-size: 20px;
-  
+}
+.ava{
+    font-size: 25px;
+    margin: 10px;
 }
 
 .card{

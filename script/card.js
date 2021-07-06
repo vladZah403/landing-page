@@ -4,13 +4,16 @@ let cards = document.getElementById('cards')
 
 
 for(let i = 0; i<6; i++){
+    let name = ['Beast','Cowboy','Hawk','Phantom ','Shooter', 'Gutsy_heart' ];
     cards.innerHTML +=
 `
 <div class="card2">
+<i class="far fa-user-circle ava"> ${name[i]}</i>
 <div class="card-photos">
-<img class = "card-img" src="style/img/ital.jpg" alt="">
+<img  src="style/img/ital.jpg" alt="">
 </div >
 <div class="like-info">
+
  <span class="nam-like" ><i class=" far fa-heart   " onclick="like(${i})" id="l${i}"></i><span id="nam-like${i}"> </span></span>
  </div>
 </div>
@@ -22,6 +25,7 @@ for(let i = 0; i<6; i++){
 
 
 
+   
 all.onclick = function card1(){
    
     if(!card.classList.contains('clicked')){
@@ -42,7 +46,7 @@ all.onclick = function card1(){
 
                         </div>
                     </div>
-                </div>   
+                </div> 
                 <div class="card">
                 <img class="card-img" src="style/img/17.jpg" alt="">
                 <div class="card-container">
@@ -121,8 +125,8 @@ all.onclick = function card1(){
                 
                         </div>
                     </div>
-                </div> 
-    `
+                </div> `
+    
     }else{
         card.classList.remove('clicked')
         card.innerHTML = ''
@@ -140,48 +144,48 @@ all.onclick = function card1(){
 //         }
 //     }
 
-// let cardJson = [
-//     {
-//         city: "Athens",
-//         img: "img/aten.jpg",
-//         price: 800,
-//         day: 5,
-//         distance: 2.200
-//     },
-    // {
-    //     city: "Vilnius",
-    //     img: "img/17.jpg",
-    //     price: 600,
-    //     day: 6,
-    //     distance: 560
-    // },
-    // {
-    //     "city": "Prague",
-    //     "img": "img/Prague.jpg",
-    //     "price": 250,
-    //     "day": 4,
-    //     "distance": 400
-    // },
-    // {
-    //     "city": "Sydney",
-    //     "img": "img/Sydney.jpg",
-    //     "price": 1.700,
-    //     "day": 6,
-    //     "distance": 5.700
-    // },
-    // {
-    //     "city": "Lisbon",
-    //     "img": "img/lisbon.jpg",
-    //     "price": 600,
-    //     "day": 7,
-    //     "distance": 600
-    // },
-    // {
-    //     "city": "Chicago",
-    //     "img": "img/chikago (2).jpg",
-    //     "price": 2.300,
-    //     "day": 5,
-    //     "distance": 3.200
-    // }
-    // ]
 
+ // let cardJson = [
+    //     Athens = {
+    //         city: "Athens",
+    //         img: "aten.jpg",
+    //         price: 800,
+    //         day: 5,
+    //         distance: 2.200
+    //     },
+    //     {
+    //         city: "Vilnius",
+    //         img: "style/img/17.jpg",
+    //         price: 600,
+    //         day: 6,
+    //         distance: 560
+    //     },
+    //     {
+    //         city: "Prague",
+    //         img: "style/img/Prague.jpg",
+    //         price: 250,
+    //         day: 4,
+    //         distance: 400
+    //     },
+    //     {
+    //         city: "Sydney",
+    //         img: "style/img/Sydney.jpg",
+    //         price: 1.700,
+    //         day: 6,
+    //         distance: 5.700
+    //     },
+    //     {
+    //         city: "Lisbon",
+    //         img: "style/img/lisbon.jpg",
+    //         price: 600,
+    //         day: 7,
+    //         distance: 600
+    //     },
+    //     {
+    //         city: "Chicago",
+    //         img: "style/img/chikago (2).jpg",
+    //         price: 2.300,
+    //         day: 5,
+    //         distance: 3.200
+    //     }
+    //     ]
