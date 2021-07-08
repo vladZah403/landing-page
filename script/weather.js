@@ -1,5 +1,5 @@
 //Получаем прогноз в массив data
-fetch('http://api.openweathermap.org/data/2.5/weather?lat=48.45&lon=34.9833&appid=3a4fd0c6c98e54f048cee6795700f961').then(function (resp) {return resp.json() }).then(function (data) {
+fetch('https://api.openweathermap.org/data/2.5/weather?lat=48.45&lon=34.9833&appid=3a4fd0c6c98e54f048cee6795700f961').then(function (resp) {return resp.json() }).then(function (data) {
     //добавляем название города
     document.querySelector('.weather__city').textContent = data.name;
     //data.main.temp содержит значение в Кельвинах, отнимаем от  273, чтобы получить значение в градусах Цельсия
