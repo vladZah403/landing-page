@@ -11,6 +11,7 @@
 </head>
 <body>
 
+    
 <header>
     <nav>
         <input type="checkbox" id="checkbox-menu">
@@ -94,20 +95,27 @@
             </div> 
         </div>
     </section>
-
+        <div>
+           <p class="weather__city"></p> 
+           <p class="weather__forecast"></p> 
+           <p class="weather__desc"></p> 
+           <p class="weather__icon"></p> 
+        </div>
     <section>
-        
+       
     </section>
 
     <section class="tours">
         <div class="wrapper tour">
             <a name="tours"></a>
             <h2> Most recent tours. <br>Europe is open to you! </h2>
-            <div class="cards" >
+            <div class="cards" id="cards2" >
+            
+             
                 <div class="card" >
                     <img class="card-img" src="style/img/warsa.jpg" alt="">
                     <div class="card-container">
-                        <h3>Warsaw</h3>
+                        <h3 class="h3">Warsaw</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                         <div class="card-info">
                             <div class="money" id="money1" onclick="money(1)"><a href="" onclick="return false;">$500</a></div>
@@ -122,7 +130,7 @@
                 <div class="card">
                     <img class="card-img" src="style/img/Paris.jpg" alt="">
                     <div class="card-container">
-                        <h3>Paris</h3>
+                        <h3 class="h3">Paris</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                         <div class="card-info">
                             <div class="money" id="money2" onclick="money(2)"><a href="" onclick="return false;">$650</a></div>
@@ -137,7 +145,7 @@
                 <div class="card">
                     <img class="card-img" src="style/img/rome2.jpg" alt="">
                     <div class="card-container">
-                        <h3>Rome</h3>
+                        <h3 class="h3">Rome</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                         <div class="card-info">
                             <div class="money" id="money3" onclick="money(3)"><a href="#" onclick="return false;">$700</a></div>
@@ -152,7 +160,7 @@
                 <div class="card">
                     <img class="card-img" src="style/img/Washington.jpg" alt="">
                     <div class="card-container">
-                        <h3>Washington</h3>
+                        <h3 class="h3">Washington</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                         <div class="card-info">
                             <div class="money" id="money4" onclick="money(4)"><a href="" onclick="return false;">$1,500</a></div>
@@ -167,7 +175,7 @@
                 <div class="card">
                     <img  class="card-img" src="style/img/stanbul.jpg" alt="">
                     <div class="card-container">
-                        <h3>Istanbul</h3>
+                        <h3 class="h3">Istanbul</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                         <div class="card-info">
                             <div class="money" id="money5" onclick="money(5)" ><a href="" onclick="return false;">$600</a></div>
@@ -182,7 +190,7 @@
                 <div class="card">
                     <img  class="card-img" src="style/img/San-Francisco.jpg" alt="">
                     <div class="card-container">
-                        <h3>San-Francisco</h3>
+                        <h3 class="h3">San-Francisco</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                         <div class="card-info">
                             <div class="money" id="money6" onclick="money(6)" ><a href="#" onclick="return false;">$1,000</a></div>
@@ -212,8 +220,8 @@
                 </div>
             <div class="buttons-search">
                 <form action="">
-                    <input type="text" placeholder="Search Locations">
-                    <input type="submit" value="Search">
+                    <input type="text" placeholder="Search Locations" id="search" onkeyup ="Search()">
+                    <input type="submit" value="Search"  >
                 </form>
                 <button class="all  " id="all">View All Tours</button>
             </div>
@@ -408,6 +416,7 @@
     <script src="https://maps.api.2gis.ru/2.0/loader.js?pkg=full"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="script/script.js"></script>
+    <script src="script/weather.js"></script>
     <script src="script/app.js"></script>
 
     <!--3D-->

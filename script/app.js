@@ -106,7 +106,21 @@ function like(el) {
     }
 
 
+// function Search (){
+//     let imput = document.getElementById('search');
+//     let filter = imput.value.toUpperCase();
+//     let cards = document.getElementById('cards2');
+//     let card = cards.getElementsByClassName('card');
 
+//     for(let i = 0; i< card.length; i++){
+//         let a = card.getElementsByClassName('h3')[0];
+//         if(a.innerHTML.toUpperCase().indexOf(filter)>-1){
+//             card[i].style.display = ''
+//         }else{
+//             card[i].style.display = 'none'
+//         }
+//     }
+// }
 
 // let share1 = document.getElementById("share");
 // let twit = document.getElementById("twit");
