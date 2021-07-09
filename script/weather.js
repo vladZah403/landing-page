@@ -12,3 +12,14 @@ fetch('https://api.openweathermap.org/data/2.5/weather?lat=48.45&lon=34.9833&app
     .catch(function () {
         //Обрабатываем ошибки
     });
+
+
+    fetch('https://api.openweathermap.org/data/2.5/weather?lat=53.55&lon=10&appid=3a4fd0c6c98e54f048cee6795700f961').then(function (resp) {return resp.json() }).then(function (data) {
+    document.querySelector('.weather__city2').textContent = data.name;
+    document.querySelector('.weather__forecast2').innerHTML = Math.round(data.main.temp - 273) + '&deg;';
+    document.querySelector('.weather__desc2').textContent = data.weather[0]['description'];
+    document.querySelector('.weather__icon2').innerHTML = `<img src="https://openweathermap.org/img/wn/${data.weather[0]['icon']}@2x.png">`;
+    })
+    .catch(function () {
+        
+    });

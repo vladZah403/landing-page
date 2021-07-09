@@ -96,49 +96,6 @@ span #color{
     margin-right: 60px;
 }
 
-/* .share {
-   font-size: 30px;
-   color: rgb(255, 221, 26);
-}
-.share:hover .inst {
-    display: inline;
-}
-.share:hover .face {
-    display: inline;
-}
-.share:hover .twit {
-    display: inline;
-}
-
-.fa-share-alt-square{
-    position: fixed;
-    left: 40px;
-    transition: 1s;
-    bottom: 20px;
-    
-}
-.inst{
-    position: fixed;
-    left: 120px;
-    bottom: 35px;
-    transition: 1s;
-    display:none;
-}
-.face{
-    position: fixed;  
-    left: 50px;
-    bottom: 100px;
-    transition: 1s;
-    display:none;
-}
-.twit{
-    position: fixed;  
-    left: 115px;
-    bottom: 90px;
-    transition: 1s;
-    display:none;
-} */
-
 .stats{
     display: flex;
     margin-top: 130px;
@@ -179,6 +136,54 @@ span #color{
     color: rgb(255, 221, 26);
     margin-bottom: 13px;
 }
+.cardWeath{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 40px;
+    padding-top: 40px;
+
+}
+
+.weather-card{
+    background-image: url(img/weather.jpg);
+    border-radius: 10px;
+    max-width: 250px;
+    height: 190px;
+    display: flex;
+    margin: 30px;
+    padding: auto;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+  
+
+}
+
+.weather__city {
+    font-size: 20px;
+}
+.weather__city2{
+    margin-top: 10px;
+    font-size: 20px;
+}
+.weather__forecast, .weather__forecast2{
+    font-size: 18px;
+    margin: 5px;
+}
+.weather__desc, .weather__desc2{
+    font-size: 17px;
+   
+}
+.weather__desc2{
+    margin-left: 10px;
+}
+.weather__icon{
+
+}
+
 /* стилизация карточек*/
 .tours{
     background: #f5f5f5a8;
