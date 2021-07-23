@@ -138,13 +138,14 @@ span #color{
 }
 .cardWeath{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(1, 1fr);
     grid-column-gap: 10px;
     grid-row-gap: 40px;
     padding-top: 40px;
 
 }
+
 
 .weather-card{
     background-image: url(img/weather.jpg);
@@ -157,32 +158,13 @@ span #color{
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-
-  
-
 }
 
-.weather__city {
-    font-size: 20px;
+.weather-text{
+    font-size: 40px;
+    margin-left: 30px;
 }
-.weather__city2{
-    margin-top: 10px;
-    font-size: 20px;
-}
-.weather__forecast, .weather__forecast2{
-    font-size: 18px;
-    margin: 5px;
-}
-.weather__desc, .weather__desc2{
-    font-size: 17px;
-   
-}
-.weather__desc2{
-    margin-left: 10px;
-}
-.weather__icon{
 
-}
 
 /* стилизация карточек*/
 .tours{
@@ -748,6 +730,13 @@ hr.hr-bottom{
         grid-row-gap: 10px;
         justify-items: center;
     }
+    .cardWeath{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-row-gap: 10px;
+        justify-items: center;
+        }
+    
     .tour h2{
         font-size: 35px;
         margin-top: 20px ;
