@@ -132,6 +132,36 @@ display: none;
     color: rgb(64, 196, 82);
     margin-bottom: 13px;
 }
+
+.cardWeath{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 40px;
+    padding-top: 40px;
+
+}
+
+
+.weather-card{
+    background-image: url(img/weather.jpg);
+    border-radius: 10px;
+    max-width: 250px;
+    height: 190px;
+    display: flex;
+    margin: 30px;
+    padding: auto;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.weather-text{
+    font-size: 40px;
+    margin-left: 30px;
+}
+
 /* стилизация карточек*/
 .tours{
     background: #f5f5f5a8;
@@ -644,6 +674,12 @@ hr.hr-bottom{
         grid-row-gap: 10px;
         justify-items: center;
     }
+    .cardWeath{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-row-gap: 10px;
+        justify-items: center;
+        }
     .tour h2{
         font-size: 35px;
         margin-top: 20px ;
