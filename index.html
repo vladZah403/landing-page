@@ -1,442 +1,519 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/main.css" id="theme">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="shortcut icon" href="style/img/compass-regular (1).ico" type="image/x-icon">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+    <link rel="stylesheet" href="reg.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+        integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
     <title>Travels</title>
 </head>
+
 <body>
 
-    
-<header>
-    <nav>
-        <input type="checkbox" id="checkbox-menu">
-        <label for="checkbox-menu">
-            <ui class="menu touch">
-                <li><a class="logo" href="#"><i class="far fa-compass  fa-spin"></i> Travels</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#tours">Tours </a></li>
-                <li><a href="#How it Work">How it Work</a></li>
-                <li id="app">
-                    <a href="#" id="subject">
-                        <i class="fas fa-circle  " id="white"></i><span id="color"> Yellow</span>  Theme
-                       
-                    </a>
-                </li>
-                <li><a class="contacts" href="#">Contact Us</a></li>
-                <li><a href="#">Join Us</a></li>
-                <li><a href="#">Getting Started</a></li>
-            </ui>
-            <span class="toggle"><i class="fas fa-bars"></i></span>
-        </label>
-    </nav>
-</header>
-<main>
-    <section class="intro wrapper">
-        <div class="intro-img">
-            <p class="intro-text">Get in the mood for vacation.<br>
-                Buy a place in the sun!</p>
-        </div>
-        <div class="intro-contacts">
-            <p><i  class="fas fa-phone"></i>(058)1283-473</p>
-            <p><i class="fas fa-map-marker-alt"></i>Hamburg, Germany</p>
-        </div>
-    </section>
 
-    
+    <header>
+        <nav>
+            <input type="checkbox" id="checkbox-menu">
+            <label for="checkbox-menu">
+                <ui class="menu touch">
+                    <li class=""><a class="logo" href="#logo"><i class="far fa-compass  fa-spin"></i> Travels</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#tours">Tours </a></li>
+                    <li><a href="#How it Work">How it Work</a></li>
+                    <li id="app">
+                        <a href="#" id="subject">
+                            <i class="fas fa-circle  " id="white"></i><span id="color"> Yellow</span> Theme
 
-    <section class="stats wrapper">
-        <div class="stats-text">
-            <h2 >Our's Company <br> Statistics</h2>
-            <p data-aos="fade-right"
-            data-aos-offset="300"
-            data-aos-easing="ease-in-sine">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit quam eveniet, ipsam in sint enim 
-                voluptatem est magni dolor commodi dolore eos tenetur possimus quo ducimus! Quidem sunt culpa maiores!</p>
-            <p data-aos="fade-right"
-            data-aos-offset="300"
-            data-aos-easing="ease-in-sine">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, vel ipsam libero corporis earum harum porro?
-                 Tempora voluptas recusandae possimus ipsam molestiae odio corporis laborum a. Sed doloremque provident repellat rem reprehenderit quia!
-            </p>    
-            <img src="style/img/travel.jpg" alt="" data-aos="flip-up">
+                        </a>
+                    </li>
+                    <li><a class="contacts" href="#">Contact Us</a></li>
+                    <li class="registr"><a href="#">Join Us</a></li>
+                    <li><a href="#">Getting Started</a></li>
+                </ui>
+                <span class="toggle"><i class="fas fa-bars"></i></span>
+            </label>
+        </nav>
+    </header>
+    <main id="mainRegistr" style="display: none;">
+        <div class="registrWraper">
+            <div class=menuReg>
+
+                <li class="login" id="login"><a href="#"> login</a> </li>
+                <li class="Registr" id="Registr"><a href="#"> Registration </a> </li>
+
+            </div>
+
+
+            <div class="registration">
+
+                <div class='loginForm' id="log" style="display: none;">
+                    <ui>
+                        <li class="impUser"><input data-validate-length-range="6" name="name" placeholder="Username"
+                                type="text">
+                        <li class="impPas"><input data-validate-length-range="6" name="password" placeholder="Password"
+                                type="password">
+                        <li><button class="submitSign">Sign in</button></li>
+                        <ui>
+                </div>
+
+                <div class='RegistrForm' id="reg">
+                    <ui>
+                        <li class="UserReg"><input class=" Us_Reg" data-validate-length-range="6" name="name"
+                                placeholder="Username" type="text"></li>
+                        <li class="impPas"> <input class=' Pas' data-validate-length-range="6" name="password"
+                                placeholder="Password" type="password"></li>
+                        <li class="impMail"> <input class="UserMail" name="email" placeholder="E-mail" type="email">
+                        <li>
+                        <li><button class="submitReg">Registr</button>
+                        <li>
+                            <ui>
+                                <span class='message'> </span>
+                </div>
+
+            </div>
+
         </div>
-        <div class="stats-num">
-            <div class="stats-line">
-                <div class="square">
-                    <span class="stats-square" id="nam1" data-aos="fade-down"></span>
-                    <span class="square-text" data-aos="fade-down-right">Tours</span>
-                </div>
-                <div class="square">
-                    <span class="stats-square" id="nam2" data-aos="fade-down"></span>
-                    <span class="square-text" data-aos="fade-down-left">Clients</span>
-                </div>
+    </main>
+
+    <main id="mainPersonal"  style="display: none;">
+            <div class="personalWraper">
+                <div class="personalArea">
+                <p> <i class="far fa-user fa-2x" id="user"> </i> </p>
+                <p><i class="fas fa-key fa-2x" id="key"> </i> </p>
+                <p><i class="fas fa-at fa-2x" id="at"> </i></p>
             </div>
-            <div class="stats-line">
-                <div class="square">
-                    <span class="stats-square" id="nam3" data-aos="fade-down"></span>
-                    <span class="square-text2" data-aos="fade-up-right">Positive Feedback</span>
-                </div>
-                <div class="square">
-                    <span class="stats-square" id="nam4" data-aos="fade-down"></span>
-                    <span class="square-text2" data-aos="fade-up-left">Partner Companies</span>
-                </div>
+        </div>
+
+    </main>
+
+    <main id="main" >
+        <section class="intro wrapper">
+            <div class="intro-img">
+                <p class="intro-text">Get in the mood for vacation.<br>
+                    Buy a place in the sun!</p>
             </div>
+            <div class="intro-contacts">
+                <p><i class="fas fa-phone"></i>(058)1283-473</p>
+                <p><i class="fas fa-map-marker-alt"></i>Hamburg, Germany</p>
+            </div>
+        </section>
+
+
+
+        <section class="stats wrapper">
             <div class="stats-text">
-          
-
-            <p  data-aos="fade-left"
-            data-aos-offset="300"
-            data-aos-easing="ease-in-sine">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, vel ipsam libero corporis earum harum porro?
-                 Tempora voluptas recusandae possimus ipsam molestiae odio corporis laborum a. Sed doloremque provident repellat rem reprehenderit quia!
-            </p>  
-     
-            </div> 
-        </div>
-    </section>
-        
-    <section>
-    <div class="wrapper">
-    <h2 class="weather-text"> Weather in different cities</h2>
-    <div class=" cardWeath">
-        
-       <div class="weather-card " data-aos="flip-left"> 
-            <h3 class="weather__city"></h3> 
-            <h4 class="weather__forecast"></h4> 
-            <span class="weather__desc"></span> 
-            <span class="weather__icon"></span>  
-        </div>
-        <div class="weather-card " data-aos="flip-left"> 
-            <h3 class="weather__city2"></h3> 
-            <h4 class="weather__forecast2"></h4> 
-            <span class="weather__desc2"></span> 
-            <span class="weather__icon2"></span>   
-        </div>
-        <div class="weather-card " data-aos="flip-right"> 
-            <h3 class="weather__city3"></h3> 
-            <h4 class="weather__forecast3"></h4> 
-            <span class="weather__desc3"></span> 
-            <span class="weather__icon3"></span>  
-        </div>
-        <div class="weather-card " data-aos="flip-right"> 
-            <h3 class="weather__city4"></h3> 
-            <h4 class="weather__forecast4"></h4> 
-            <span class="weather__desc4"></span> 
-            <span class="weather__icon4"></span>  
-        </div>
-    </div>
-    </div>      
-    </section>
-
-    <section class="tours">
-        <div class="wrapper tour">
-            <a name="tours"></a>
-            <h2> Most recent tours. <br>Europe is open to you! </h2>
-            <div class="cards" id="cards2" >
-            
-             
-                <div class="card" >
-                    <img class="card-img" src="style/img/warsa.jpg" alt="">
-                    <div class="card-container">
-                        <h3 class="h3">Warsaw</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        <div class="card-info">
-                            <div class="money" id="money1" onclick="money(1)"><a href="" onclick="return false;">$500</a></div>
-                            <div class="info">
-                                <span><i class="far fa-calendar-alt"></i> 7 day</span>
-                                <span><i class="fas fa-route"></i> 400 km</span>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <img class="card-img" src="style/img/Paris.jpg" alt="">
-                    <div class="card-container">
-                        <h3 class="h3">Paris</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        <div class="card-info">
-                            <div class="money" id="money2" onclick="money(2)"><a href="" onclick="return false;">$650</a></div>
-                            <div class="info">
-                                <span><i class="far fa-calendar-alt"></i> 7 day</span>
-                                <span><i class="fas fa-route"></i> 500 km</span>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <img class="card-img" src="style/img/rome2.jpg" alt="">
-                    <div class="card-container">
-                        <h3 class="h3">Rome</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        <div class="card-info">
-                            <div class="money" id="money3" onclick="money(3)"><a href="#" onclick="return false;">$700</a></div>
-                            <div class="info">
-                                <span><i class="far fa-calendar-alt"></i> 5 day</span>
-                                <span><i class="fas fa-route"></i> 1,000 km</span>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <img class="card-img" src="style/img/Washington.jpg" alt="">
-                    <div class="card-container">
-                        <h3 class="h3">Washington</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        <div class="card-info">
-                            <div class="money" id="money4" onclick="money(4)"><a href="" onclick="return false;">$1,500</a></div>
-                            <div class="info">
-                                <span><i class="far fa-calendar-alt"></i> 4 day</span>
-                                <span><i class="fas fa-route"></i> 4,200 km</span>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <img  class="card-img" src="style/img/stanbul.jpg" alt="">
-                    <div class="card-container">
-                        <h3 class="h3">Istanbul</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        <div class="card-info">
-                            <div class="money" id="money5" onclick="money(5)" ><a href="" onclick="return false;">$600</a></div>
-                            <div class="info">
-                                <span><i class="far fa-calendar-alt"></i> 6 day</span>
-                                <span><i class="fas fa-route"></i> 2,700 km</span>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <img  class="card-img" src="style/img/San-Francisco.jpg" alt="">
-                    <div class="card-container">
-                        <h3 class="h3">San-Francisco</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        <div class="card-info">
-                            <div class="money" id="money6" onclick="money(6)" ><a href="#" onclick="return false;">$1,000</a></div>
-                            <div class="info">
-                                <span><i class="far fa-calendar-alt"></i> 7 day</span>
-                                <span><i class="fas fa-route"></i> 4,600 km</span>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-                
-               
+                <h2>Our's Company <br> Statistics</h2>
+                <p data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit. Sit quam eveniet, ipsam in sint enim
+                    voluptatem est magni dolor commodi dolore eos tenetur possimus quo ducimus! Quidem sunt culpa
+                    maiores!</p>
+                <p data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, vel ipsam libero corporis earum
+                    harum porro?
+                    Tempora voluptas recusandae possimus ipsam molestiae odio corporis laborum a. Sed doloremque
+                    provident repellat rem reprehenderit quia!
+                </p>
+                <img src="style/img/travel.jpg" alt="" data-aos="flip-up">
             </div>
-            
-            <div class="cards" id="card" >
-
-            </div>
-
-             <div id="my_modal" class="modal">
-                <div class="modal_content">
-                    <span class="close_modal_window" >×</span> 
-                    <div id="modal_info">
-
+            <div class="stats-num">
+                <div class="stats-line">
+                    <div class="square">
+                        <span class="stats-square" id="nam1" data-aos="fade-down"></span>
+                        <span class="square-text" data-aos="fade-down-right">Tours</span>
                     </div>
-                  </div>
+                    <div class="square">
+                        <span class="stats-square" id="nam2" data-aos="fade-down"></span>
+                        <span class="square-text" data-aos="fade-down-left">Clients</span>
+                    </div>
                 </div>
-            <div class="buttons-search">
-                <form action="">
-                    <input type="text" placeholder="Search Locations" id="search" onkeyup ="Search()">
-                    <input type="submit" value="Search"  >
-                </form>
-                <button class="all  " id="all">View All Tours</button>
-            </div>
-        </div>
-    </section>
-    <section class="steps">
-        <div class="wrapper">
-            <a name="How it Work"></a>
-            <h2>How It Work</h2>
-            <p class="steps-text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. At consequuntur ex sequi porro minima quisquam atque maiores et eveniet delectus?
-            </p>
-            <p class="steps-text mbtext">Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Corrupti aliquid veritatis est beatae sit at.</p>
-            <div class="steps-container">
-                <div class="stepblock  transition" id="stepbl1">
-                    <p class="step-num">01</p>
-                    <h4><span>01</span>Find Your Location</h4>
-                    <p class="step-info">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam iusto expedita at doloremque nam odit quia.</p>
-                    <p class="stepinfolast" id="stepbrdr1">Find Location</p>
+                <div class="stats-line">
+                    <div class="square">
+                        <span class="stats-square" id="nam3" data-aos="fade-down"></span>
+                        <span class="square-text2" data-aos="fade-up-right">Positive Feedback</span>
+                    </div>
+                    <div class="square">
+                        <span class="stats-square" id="nam4" data-aos="fade-down"></span>
+                        <span class="square-text2" data-aos="fade-up-left">Partner Companies</span>
+                    </div>
                 </div>
-                <div class="stepblock  transition" id="stepbl2">
-                    <p class="step-num">02</p>
-                    <h4><span>02</span>Choose Tour</h4>
-                    <p class="step-info">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam iusto expedita at doloremque nam odit quia.</p>
-                    <p class="stepinfolast" id="stepbrdr2">Find Location</p>
-                </div>
-                <div class="stepblock  transition" id="stepbl3">
-                    <p class="step-num">03</p>
-                    <h4><span>03</span>Go On Tour</h4>
-                    <p class="step-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum blanditiis in, saepe quibusdam officia tenetur perspiciatis!</p>
-                    <p class="stepinfolast" id="stepbrdr3">Find Location</p>
+                <div class="stats-text">
+
+
+                    <p data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, vel ipsam libero corporis earum
+                        harum porro?
+                        Tempora voluptas recusandae possimus ipsam molestiae odio corporis laborum a. Sed doloremque
+                        provident repellat rem reprehenderit quia!
+                    </p>
+
                 </div>
             </div>
-        </div>
-    </section>
-    
-    <section class="services wrapper">
-        <h2>Services</h2>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-        <p>Lorem ipsum dolor sit amet.</p>
-        <div class="serv-container">
-            <div class="serv-img-container" data-aos="fade-right"
-            data-aos-offset="300"
-            data-aos-easing="ease-in-sine">
-                <img src="style/img/New-York.jpg" alt="">
-                
+        </section>
+
+        <section>
+            <div class="wrapper">
+                <h2 class="weather-text"> Weather in different cities</h2>
+                <div class=" cardWeath">
+
+                    <div class="weather-card " data-aos="flip-left">
+                        <h3 class="weather__city"></h3>
+                        <h4 class="weather__forecast"></h4>
+                        <span class="weather__desc"></span>
+                        <span class="weather__icon"></span>
+                    </div>
+                    <div class="weather-card " data-aos="flip-left">
+                        <h3 class="weather__city2"></h3>
+                        <h4 class="weather__forecast2"></h4>
+                        <span class="weather__desc2"></span>
+                        <span class="weather__icon2"></span>
+                    </div>
+                    <div class="weather-card " data-aos="flip-right">
+                        <h3 class="weather__city3"></h3>
+                        <h4 class="weather__forecast3"></h4>
+                        <span class="weather__desc3"></span>
+                        <span class="weather__icon3"></span>
+                    </div>
+                    <div class="weather-card " data-aos="flip-right">
+                        <h3 class="weather__city4"></h3>
+                        <h4 class="weather__forecast4"></h4>
+                        <span class="weather__desc4"></span>
+                        <span class="weather__icon4"></span>
+                    </div>
+                </div>
             </div>
+        </section>
+
+        <section class="tours">
+            <div class="wrapper tour">
+                <a name="tours"></a>
+                <h2> Most recent tours. <br>Europe is open to you! </h2>
+                <div class="cards" id="cards2">
+
+
+                    <div class="card">
+                        <img class="card-img" src="style/img/warsa.jpg" alt="">
+                        <div class="card-container">
+                            <h3 class="h3">Warsaw</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <div class="card-info">
+                                <div class="money" id="money1" onclick="money(1)"><a href=""
+                                        onclick="return false;">$500</a></div>
+                                <div class="info">
+                                    <span><i class="far fa-calendar-alt"></i> 7 day</span>
+                                    <span><i class="fas fa-route"></i> 400 km</span>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img" src="style/img/Paris.jpg" alt="">
+                        <div class="card-container">
+                            <h3 class="h3">Paris</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <div class="card-info">
+                                <div class="money" id="money2" onclick="money(2)"><a href=""
+                                        onclick="return false;">$650</a></div>
+                                <div class="info">
+                                    <span><i class="far fa-calendar-alt"></i> 7 day</span>
+                                    <span><i class="fas fa-route"></i> 500 km</span>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img" src="style/img/rome2.jpg" alt="">
+                        <div class="card-container">
+                            <h3 class="h3">Rome</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <div class="card-info">
+                                <div class="money" id="money3" onclick="money(3)"><a href="#"
+                                        onclick="return false;">$700</a></div>
+                                <div class="info">
+                                    <span><i class="far fa-calendar-alt"></i> 5 day</span>
+                                    <span><i class="fas fa-route"></i> 1,000 km</span>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img" src="style/img/Washington.jpg" alt="">
+                        <div class="card-container">
+                            <h3 class="h3">Washington</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <div class="card-info">
+                                <div class="money" id="money4" onclick="money(4)"><a href=""
+                                        onclick="return false;">$1,500</a></div>
+                                <div class="info">
+                                    <span><i class="far fa-calendar-alt"></i> 4 day</span>
+                                    <span><i class="fas fa-route"></i> 4,200 km</span>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img" src="style/img/stanbul.jpg" alt="">
+                        <div class="card-container">
+                            <h3 class="h3">Istanbul</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <div class="card-info">
+                                <div class="money" id="money5" onclick="money(5)"><a href=""
+                                        onclick="return false;">$600</a></div>
+                                <div class="info">
+                                    <span><i class="far fa-calendar-alt"></i> 6 day</span>
+                                    <span><i class="fas fa-route"></i> 2,700 km</span>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img" src="style/img/San-Francisco.jpg" alt="">
+                        <div class="card-container">
+                            <h3 class="h3">San-Francisco</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <div class="card-info">
+                                <div class="money" id="money6" onclick="money(6)"><a href="#"
+                                        onclick="return false;">$1,000</a></div>
+                                <div class="info">
+                                    <span><i class="far fa-calendar-alt"></i> 7 day</span>
+                                    <span><i class="fas fa-route"></i> 4,600 km</span>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="cards" id="card">
+
+                </div>
+
+                <div id="my_modal" class="modal">
+                    <div class="modal_content">
+                        <span class="close_modal_window">×</span>
+                        <div id="modal_info">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="buttons-search">
+                    <form action="">
+                        <input type="text" placeholder="Search Locations" id="search" onkeyup="Search()">
+                        <input type="submit" value="Search">
+                    </form>
+                    <button class="all  " id="all">View All Tours</button>
+                </div>
+            </div>
+        </section>
+        <section class="steps">
+            <div class="wrapper">
+                <a name="How it Work"></a>
+                <h2>How It Work</h2>
+                <p class="steps-text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. At consequuntur ex sequi porro minima
+                    quisquam atque maiores et eveniet delectus?
+                </p>
+                <p class="steps-text mbtext">Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Corrupti
+                    aliquid veritatis est beatae sit at.</p>
+                <div class="steps-container">
+                    <div class="stepblock  transition" id="stepbl1">
+                        <p class="step-num">01</p>
+                        <h4><span>01</span>Find Your Location</h4>
+                        <p class="step-info">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam iusto
+                            expedita at doloremque nam odit quia.</p>
+                        <p class="stepinfolast" id="stepbrdr1">Find Location</p>
+                    </div>
+                    <div class="stepblock  transition" id="stepbl2">
+                        <p class="step-num">02</p>
+                        <h4><span>02</span>Choose Tour</h4>
+                        <p class="step-info">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam iusto
+                            expedita at doloremque nam odit quia.</p>
+                        <p class="stepinfolast" id="stepbrdr2">Find Location</p>
+                    </div>
+                    <div class="stepblock  transition" id="stepbl3">
+                        <p class="step-num">03</p>
+                        <h4><span>03</span>Go On Tour</h4>
+                        <p class="step-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum blanditiis in,
+                            saepe quibusdam officia tenetur perspiciatis!</p>
+                        <p class="stepinfolast" id="stepbrdr3">Find Location</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="services wrapper">
+            <h2>Services</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <div class="serv-container">
+                <div class="serv-img-container" data-aos="fade-right" data-aos-offset="300"
+                    data-aos-easing="ease-in-sine">
+                    <img src="style/img/New-York.jpg" alt="">
+
+                </div>
                 <div class="serv-text" data-aos="zoom-out-down">
                     <h4>Renting</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi placeat a praesentium delectus 
-                        quo accusantium quidem itaque debitis magni, saepe veniam nesciunt illum molestias molestiae 
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi placeat a praesentium delectus
+                        quo accusantium quidem itaque debitis magni, saepe veniam nesciunt illum molestias molestiae
                         obcaecati ipsam, assumenda exercitationem veritatis!</p>
                     <h4>Renting</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi placeat a praesentium delectus 
-                        accusantium quidem itaque debitis magni, saepe veniam nesciunt illum molestias molestiae 
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi placeat a praesentium delectus
+                        accusantium quidem itaque debitis magni, saepe veniam nesciunt illum molestias molestiae
                         obcaecati ipsam, assumenda exercitationem veritatis!</p>
                     <h4>Renting</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi placeat a praesentium delectus 
-                        quo accusantium quidem itaque debitis magni, saepe veniam nesciunt illum molestias molestiae 
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi placeat a praesentium delectus
+                        quo accusantium quidem itaque debitis magni, saepe veniam nesciunt illum molestias molestiae
                         obcaecati ipsam, assumenda exercitationem veritatis!</p>
 
-                
-            </div>
-        </div>
-    </section>
-    <section class="tours">
-        <div class="wrapper tour">
-           <h2>Photos from the travels of our clients</h2>
-           <div class="cards" id="cards">
-               
-               
-            
-            </div>
-        </div>
-        </div>
-    </section>
-<section class="add wrapper">
-<div class="add-line">
-    <div class="line-img" data-aos="zoom-in-up">
-        <img src="style/img/gre.jpg" alt="">
-    <div class="location location-greece">
-        <i class="fas fa-map-marker-alt"></i>
-        Greece
-    </div>
-    </div>
-    <div class="line-text" data-aos="fade-down-left">
-        <h3>Travel to Greece</h3>
-        <P>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat odit ad aut eveniet possimus quisquam magnam officia adipisci sint vero,
-            suscipit asperiores, hic modi error eligendi. Nostrum minima dolorem, ex rem, quasi amet eius quod rerum numquam, fugit delectus recusandae.</P>
-    </div>
-</div>
 
-<div class="add-line add-line-right">
-    
-    <div class="line-text" data-aos="fade-down-right">
-        <h3>Travel to Spain</h3>
-        <P>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat odit ad aut eveniet possimus quisquam magnam officia adipisci sint vero,
-            suscipit asperiores, hic modi error eligendi. Nostrum minima dolorem, ex rem, quasi amet eius quod rerum numquam, fugit delectus recusandae.</P>
-    </div>
-    <div class="line-img" data-aos="zoom-in-up">
-        <img src="style/img/Spain.jpg" alt="">
-    <div class="location location-spain">
-        <i class="fas fa-map-marker-alt"></i>
-        Spain
-    </div>
-    </div>
-</div>
-
-<div class="add-line">
-    <div class="line-img" data-aos="zoom-in-up">
-        <img src="style/img/Israel.jpg" alt="">
-        <div class="location location-greece">
-            <i class="fas fa-map-marker-alt"></i>
-            Israel
-
-        </div>
-    </div>
-    <div class="line-text" data-aos="fade-down-left">
-        <h3>Travel to Israel </h3>
-        <P>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat odit ad aut eveniet possimus quisquam magnam officia adipisci sint vero,
-            suscipit asperiores, hic modi error eligendi.</P>
-            
-        <button class="show-more" >
-            Show me more
-        </button> 
-    </div>
-    
-</div>
-
-<div class="add-line add-line-right" id="line">
-</div>
-<div class="add-line" id="line2">
-</div>
-</section>
-</main>
-<footer>
-    <div class="wrapper">
-        <div class="footer-block">
-            <div class="footer-logo">
-                <h3><i class="far fa-compass  fa-spin"></i> Travels</h3>
-                <h3>Buy a place in the sun!</h3>
+                </div>
             </div>
-            <div class="footer-search">
-                <input type="text" placeholder="Subscribe">
+        </section>
+        <section class="tours">
+            <div class="wrapper tour">
+                <h2>Photos from the travels of our clients</h2>
+                <div class="cards" id="cards">
+
+
+
+                </div>
             </div>
-        </div>
-        <hr>
-        <div class="footer-links">
-            <div class="footer-links-logo">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d151677.41037674525!2d9.
+            </div>
+        </section>
+        <section class="add wrapper">
+            <div class="add-line">
+                <div class="line-img" data-aos="zoom-in-up">
+                    <img src="style/img/gre.jpg" alt="">
+                    <div class="location location-greece">
+                        <i class="fas fa-map-marker-alt"></i>
+                        Greece
+                    </div>
+                </div>
+                <div class="line-text" data-aos="fade-down-left">
+                    <h3>Travel to Greece</h3>
+                    <P>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat odit ad aut eveniet possimus
+                        quisquam magnam officia adipisci sint vero,
+                        suscipit asperiores, hic modi error eligendi. Nostrum minima dolorem, ex rem, quasi amet eius
+                        quod rerum numquam, fugit delectus recusandae.</P>
+                </div>
+            </div>
+
+            <div class="add-line add-line-right">
+
+                <div class="line-text" data-aos="fade-down-right">
+                    <h3>Travel to Spain</h3>
+                    <P>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat odit ad aut eveniet possimus
+                        quisquam magnam officia adipisci sint vero,
+                        suscipit asperiores, hic modi error eligendi. Nostrum minima dolorem, ex rem, quasi amet eius
+                        quod rerum numquam, fugit delectus recusandae.</P>
+                </div>
+                <div class="line-img" data-aos="zoom-in-up">
+                    <img src="style/img/Spain.jpg" alt="">
+                    <div class="location location-spain">
+                        <i class="fas fa-map-marker-alt"></i>
+                        Spain
+                    </div>
+                </div>
+            </div>
+
+            <div class="add-line">
+                <div class="line-img" data-aos="zoom-in-up">
+                    <img src="style/img/Israel.jpg" alt="">
+                    <div class="location location-greece">
+                        <i class="fas fa-map-marker-alt"></i>
+                        Israel
+
+                    </div>
+                </div>
+                <div class="line-text" data-aos="fade-down-left">
+                    <h3>Travel to Israel </h3>
+                    <P>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat odit ad aut eveniet possimus
+                        quisquam magnam officia adipisci sint vero,
+                        suscipit asperiores, hic modi error eligendi.</P>
+
+                    <button class="show-more">
+                        Show me more
+                    </button>
+                </div>
+
+            </div>
+
+            <div class="add-line add-line-right" id="line">
+            </div>
+            <div class="add-line" id="line2">
+            </div>
+        </section>
+    </main>
+
+
+
+    <footer>
+        <div class="wrapper">
+            <div class="footer-block">
+                <div class="footer-logo">
+                    <h3><i class="far fa-compass  fa-spin"></i> Travels</h3>
+                    <h3>Buy a place in the sun!</h3>
+                </div>
+                <div class="footer-search">
+                    <input type="text" placeholder="Subscribe">
+                </div>
+            </div>
+            <hr>
+            <div class="footer-links">
+                <div class="footer-links-logo">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d151677.41037674525!2d9.
                 787396714389335!3d53.55848977016944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47
                 b161837e1813b9%3A0x4263df27bd63aa0!2z0JPQsNC80LHRg9GA0LMsINCT0LXRgNC80LDQvdC40Y8!5e0!3m2!1
-                sru!2sua!4v1612909373132!5m2!1sru!2sua" id="map" frameborder="0" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                sru!2sua!4v1612909373132!5m2!1sru!2sua" id="map" frameborder="0" allowfullscreen="" aria-hidden="false"
+                        tabindex="0"></iframe>
+                </div>
+                <div class="footer-link">
+                    <p>Phone </p>
+                    <span class="phone"><i class="fas fa-phone"></i> (058)1283-473 </span>
+                    <span class="phone"><i class="fas fa-phone"></i> (035)1643-738</span>
+
+                </div>
+                <div class="footer-link">
+                    <p>social network</p>
+                    <a href=""><i class="fab fa-instagram"> </i> Instagram</a>
+                    <a href=""><i class="fab fa-facebook-f"></i> Facebook</a>
+                    <a href=""><i class="fab fa-twitter"></i> Twitter</a>
+                </div>
+                <div class="footer-link">
+                    <p>information</p>
+                    <a href="">FAQ</a>
+                    <a href="">Security</a>
+
+                </div>
+
             </div>
-            <div class="footer-link">
-                <p>Phone </p>
-                <span class="phone"><i  class="fas fa-phone"></i> (058)1283-473 </span>
-                <span class="phone"><i  class="fas fa-phone"></i> (035)1643-738</span>
-              
+            <hr class="hr-bottom">
+            <div class="footer-info-block">
+                <div class="info-footer">
+                    <p>© All rights reserved «Travels» 2021</p>
+                </div>
+                <div class="info-card-footer">
+                    <i class="fab fa-cc-mastercard"></i>
+                    <i class="fab fa-cc-visa"></i>
+                    <i class="fab fa-paypal"></i>
+                </div>
             </div>
-            <div class="footer-link">
-                <p>social network</p>
-                <a href=""><i class="fab fa-instagram"> </i> Instagram</a>
-                <a href=""><i class="fab fa-facebook-f"></i> Facebook</a>
-                <a href=""><i class="fab fa-twitter"></i> Twitter</a>
-            </div>
-            <div class="footer-link">
-                <p>information</p>
-                <a href="">FAQ</a>
-                <a href="">Security</a>
-            
-            </div>
-        
+
         </div>
-        <hr class="hr-bottom">
-        <div class="footer-info-block">
-            <div class="info-footer">
-                <p>© All rights reserved  «Travels» 2021</p>
-            </div>
-            <div class="info-card-footer">
-                <i class="fab fa-cc-mastercard"></i>
-                <i class="fab fa-cc-visa"></i>
-                <i class="fab fa-paypal"></i>
-            </div>
-        </div>
-     
-    </div>
-</footer>   
+
+
+    </footer>
     <script src="script/modal.js"></script>
     <script src="script/location.js"></script>
     <script src="script/card.js"></script>
@@ -445,6 +522,8 @@
     <script src="script/script.js"></script>
     <script src="script/weather.js"></script>
     <script src="script/app.js"></script>
+    <script src="script/colorTeme.js"></script>
+    <script src="script/registration.js"></script>
 
     <!--3D-->
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r126/three.min.js"></script>
@@ -494,4 +573,5 @@
         animate();
       </script> -->
 </body>
+
 </html>

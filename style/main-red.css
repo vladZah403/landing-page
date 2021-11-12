@@ -531,6 +531,88 @@ hr.hr-bottom{
     font-size: 55px;
 }
 
+
+.registrWraper{
+    margin: 0 auto;
+    max-width: 400px;
+}
+.menuReg{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-content: center;
+    list-style-type: none;
+    margin-top: 20px;
+    background-color: rgb(226, 60, 60);
+    border-top-left-radius: 10px ; 
+    border-top-right-radius : 10px ;
+    justify-content: space-around;
+    padding: 15px;
+}
+.registration{
+    display: flex;
+    justify-content:center;
+    list-style-type: none;
+    background-color: rgb(226, 60, 60);
+    min-height: 300px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius:10px ;
+    margin-bottom: 25px;
+    
+}
+
+.loginForm, .RegistrForm{
+    margin: 10px;
+}
+
+.impUser input, .impPas input, .UserReg input, .impMail input{
+    border: none;
+    border-radius: 2px;
+    font-size: 15px;
+    margin: 5px;
+    border-top: 20px;
+    width: 250px;
+    height: 50px;
+    padding-left: 5px;
+
+}
+.submitSign, .submitReg{
+    border-radius: 2px;
+    border: none;
+    margin: 5px;
+    width: 255px;
+    height: 30px;
+    font-size: 15px;
+    background-color: rgb(255, 19, 19);
+    transition: 2s;
+
+}
+.submitReg:hover{
+    background-color: rgb(255, 65, 17);
+    transition: 2s;
+}
+.submitSign:hover{
+    background-color: rgb(255, 65, 17);
+    transition: 2s;
+}
+.login, .Registr {
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.24);
+    transition: 1s;
+    
+}
+.login:hover, .Registr:hover{
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.493);
+    transform: scale(1.2);
+    transition: 1s;
+}
+.login a, .Registr a{
+    text-decoration: none;  
+    color: black;
+}
+
 @media screen and (max-width: 1400px){
     .intro-contacts{
         right: 140px;
