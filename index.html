@@ -87,6 +87,18 @@
                 <p><i class="fas fa-key fa-2x" id="key"> </i> </p>
                 <p><i class="fas fa-at fa-2x" id="at"> </i></p>
                  <button class="Exit">Exit</button>
+                 <form class="form" method="post" action="/index.php">
+                    <div class="form__item">
+                        <input class="form__input" type="text" name="name" required>
+                        <label class="form__label">Ваше имя</label>
+                    </div>
+                    <div class="form__item">
+                        <input class="form__input" type="text" name="phone" required>
+                        <label class="form__label">Номер телефона</label>
+                    </div>
+                    <input class="form__input btn" type="submit" value="Отправить">
+                    <input type="hidden" name="act" value="order">
+                </form>
             </div>
            
         </div>
@@ -526,6 +538,7 @@
     <script src="script/app.js"></script>
     <script src="script/colorTeme.js"></script>
     <script src="script/registration.js"></script>
+    <script src="script/chat.js"></script>
 
     <!--3D-->
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r126/three.min.js"></script>
