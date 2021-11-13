@@ -83,6 +83,8 @@ submitReg.addEventListener('click', () => {
     } else if (UserMail.match(regMail) == null) {
         message.innerHTML = 'You entered an invalid E-mail'
     }
+})
+
 
 
 // const userBox = document.querySelector('.userBox')
@@ -100,5 +102,7 @@ submitReg.addEventListener('click', () => {
 const user = document.querySelector('#user')
 const key = document.querySelector('#key')
 const at = document.querySelector('#at')
+
+
 
 
