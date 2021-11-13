@@ -580,6 +580,7 @@ hr.hr-bottom{
 .close_modal_window {
     bottom: 15px;
 }
+
 .icon-user{
     padding: 10px 15px;
 }
@@ -591,7 +592,7 @@ hr.hr-bottom{
 .message{
  margin-left: 5px;  
  color: brown;
- font-size: 16px;
+ font-size: 14px;
 }
 
 .registrWraper{
@@ -691,8 +692,26 @@ hr.hr-bottom{
 }
 .personalWraper{
     margin: 0 auto;
-    max-width: 300px;
+    max-width: 600px;
     
+}
+
+.Exit{
+    margin: auto;
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: rgb(255, 221, 26);
+    font-size: 20px;
+    transition: 1s;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.493);
+    
+}
+.Exit:hover{
+    background-color: rgb(255, 99, 26);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.575);
+
+
 }
 
 @media screen and (max-width: 1400px){

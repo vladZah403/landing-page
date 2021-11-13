@@ -531,7 +531,65 @@ hr.hr-bottom{
     font-size: 55px;
 }
 
+.overlay {
+   
+    /* Скрываем подложку  */
+    opacity: 0;
+    visibility: hidden;
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    z-index: 20;
+    transition: .3s all;
+ }
+ .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.6);
+    z-index: 1000;
+}
+.modal .modal_content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 30%;
+    z-index: 99999;
+}
+.modal .modal_content .close_modal_window {
+    color: #aaa;
+    float: right;
+    font-size: 25px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.close_modal_window {
+    bottom: 15px;
+}
 
+.icon-user{
+    padding: 10px 15px;
+}
+.icon-user:hover{
+    background: rgb(64, 196, 82);
+    border-radius: 6px; 
+}
+
+.message{
+ margin-left: 5px;  
+ color: brown;
+ font-size: 14px;
+}
 .registrWraper{
     margin: 0 auto;
     max-width: 400px;
@@ -611,6 +669,45 @@ hr.hr-bottom{
 .login a, .Registr a{
     text-decoration: none;  
     color: black;
+}
+
+.personalArea{
+    display: flex;
+    border: 1px solid black;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+.personalArea{
+    border-radius: 5px;
+    margin: 25px;
+    padding: 15px;
+}
+.personalArea p {
+    margin: 15px;
+}
+.personalWraper{
+    margin: 0 auto;
+    max-width: 600px;
+    
+}
+
+.Exit{
+    margin: auto;
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: rgb(34, 255, 27);
+    font-size: 20px;
+    transition: 1s;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.493);
+    
+}
+.Exit:hover{
+    background-color: rgb(26, 255, 102);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.575);
+
+
 }
 
 @media screen and (max-width: 1400px){
