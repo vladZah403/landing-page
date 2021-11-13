@@ -724,6 +724,26 @@ border: 1px solid black;
 #textUsername{
     height: 20px;
 }
+
+input[type="file"] {
+    display: none;
+}
+.custom-file-upload {
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+    margin: 10px;
+    padding: 10px;
+    width: 230px;
+    height: 20px;
+    border-radius: 3px;
+    border: 1px solid black;
+}
+.custom-file-upload i{
+    margin-left: 50px;
+}
+
 .form__btn{
     margin: 20px;
     padding: 10px;

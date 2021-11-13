@@ -6,11 +6,13 @@ $chat_id = "-1001658073520";
 if ($_POST['act'] == 'order') {
     $name = ($_POST['name']);
     $text = ($_POST['text']);
+    $file = ($_POST['file']);
 
 
     $arr = array(
-        'Имя:' => $name,
-        'сообщение:' => $text,
+        'User:' => $name,
+        'Message:' => $text,
+        'File: ' =>$file
     );
 
     foreach($arr as $key => $value) {
@@ -19,12 +21,7 @@ if ($_POST['act'] == 'order') {
 
     $sendToTelegram = fopen("https://api.telegram.org/bot{$token}/sendMessage?chat_id={$chat_id}&parse_mode=html&text={$txt}","r");
 
-    if ($sendToTelegram) {
-        alert('Спасибо! Ваша заявка принята. Мы свяжемся с вами в ближайшее время.');
-    }
-    else {
-        alert('Что-то пошло не так. ПОпробуйте отправить форму ещё раз.');
-    }
+   
 }
 
 ?>
