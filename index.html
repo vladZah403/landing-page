@@ -53,10 +53,10 @@
 
                 <div class='loginForm' id="log" style="display: none;">
                     <ui>
-                        <li class="impUser"><input class = " Us_Log"data-validate-length-range="6" name="name" placeholder="Username"
-                                type="text">
-                        <li class="impPas"><input class = " Pas_Log" data-validate-length-range="6" name="password" placeholder="Password"
-                                type="password">
+                        <li class="impUser"><input class=" Us_Log" data-validate-length-range="6" name="name"
+                                placeholder="Username" type="text">
+                        <li class="impPas"><input class=" Pas_Log" data-validate-length-range="6" name="password"
+                                placeholder="Password" type="password">
                         <li><button class="submitSign">Sign in</button></li>
                         <ui>
                 </div>
@@ -80,41 +80,48 @@
         </div>
     </main>
 
-    <main id="mainPersonal"  style="display: none;">
-            <div class="personalWraper">
-                <div class="personalArea">
-                <p> <i class="far fa-user fa-2x" id="user"> </i> </p>
+    <main id="mainPersonal" style="display: none;">
+        <div class="personalWraper">
+            <div class="personalArea">
+                <p> <i class="far fa-user fa-2x" id="user" name="name"> </i> </p>
                 <p><i class="fas fa-key fa-2x" id="key"> </i> </p>
                 <p><i class="fas fa-at fa-2x" id="at"> </i></p>
-                 <button class="Exit">Exit</button>
-                 <form class="form" method="post" action="/index.php">
-                    <div class="form__item">
-                        <input class="form__input" type="text" name="name" required>
-                        <label class="form__label">Ваше имя</label>
+                <button class="Exit">Exit</button>
+            </div>
+
+        </div>
+        <div class="personalWraperMassege">
+            <div class="massegTelegram">
+                <form class="form" method="post" action="/index.php">
+                    
+                    <div class="form_item">
+                        <i class="fab fa-telegram-plane fa-lg "> </i> <span class="textMasseg">Sending messages to Telegram</span> 
+                        <ul>
+                            <li><input class="form__input" id="textUsername" placeholder="Your username" type="text" name="name" required ></li>
+                            <li><textarea name="text" placeholder="Your message " class="form__input" required ></textarea></li>
+                        </ul>
+                        
                     </div>
-                    <div class="form__item">
-                        <input class="form__input" type="text" name="phone" required>
-                        <label class="form__label">Номер телефона</label>
-                    </div>
-                    <input class="form__input btn" type="submit" value="Отправить">
+                    <input class="form__btn" type="submit" value="Отправить">
                     <input type="hidden" name="act" value="order">
+                    
+
                 </form>
             </div>
-           
         </div>
 
     </main>
 
-    <main id="main" ">
-        <section class="intro wrapper">
-            <div class="intro-img">
-                <p class="intro-text">Get in the mood for vacation.<br>
-                    Buy a place in the sun!</p>
-            </div>
-            <div class="intro-contacts">
-                <p><i class="fas fa-phone"></i>(058)1283-473</p>
-                <p><i class="fas fa-map-marker-alt"></i>Hamburg, Germany</p>
-            </div>
+    <main id="main">
+        <section class=" intro wrapper">
+        <div class="intro-img">
+            <p class="intro-text">Get in the mood for vacation.<br>
+                Buy a place in the sun!</p>
+        </div>
+        <div class="intro-contacts">
+            <p><i class="fas fa-phone"></i>(058)1283-473</p>
+            <p><i class="fas fa-map-marker-alt"></i>Hamburg, Germany</p>
+        </div>
         </section>
 
 
@@ -539,6 +546,10 @@
     <script src="script/colorTeme.js"></script>
     <script src="script/registration.js"></script>
     <script src="script/chat.js"></script>
+
+
+
+
 
     <!--3D-->
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r126/three.min.js"></script>
