@@ -6,13 +6,11 @@ $chat_id = "-1001658073520";
 if ($_POST['act'] == 'order') {
     $name = ($_POST['name']);
     $text = ($_POST['text']);
-    $file = ($_POST['file']);
-
 
     $arr = array(
         'User:' => $name,
         'Message:' => $text,
-        'File: ' =>$file
+    
     );
 
     foreach($arr as $key => $value) {
