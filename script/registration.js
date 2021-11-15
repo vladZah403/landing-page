@@ -13,6 +13,8 @@ const key = document.querySelector('#key')
 const user = document.querySelector('#user')
 
 const Exit = document.querySelector(".Exit")
+ 
+let textUsername =document.querySelector('#textUsername')
 
 batRegistr.addEventListener('click', () => {
     Main.style.display = 'none'
@@ -99,7 +101,7 @@ submitReg.addEventListener('click', () => {
         batRegistr.classList.add('userBox');
         batRegistr = document.querySelector('.userBox')
 
-
+        textUsername.value= `${UserReg}`
         user.innerHTML = ` ${UserReg}`
 
         key.innerHTML = ` ${UserPas}`
@@ -179,6 +181,10 @@ submitSign.addEventListener('click', () =>{
         key.innerHTML = ` ${UserStopeg.UserPassword}`
 
         at.innerHTML = ` ${UserStopeg.UserEmail}`
+
+        textUsername.value= `${UserStopeg.Login}`
     }
 })
+
+
 
