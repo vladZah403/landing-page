@@ -728,7 +728,7 @@ height: 70px;
 border-radius: 3px;
 border: 1px solid black;
 }
-#textUsername, #textTours, #idTours, #textPhone{
+#textUsername, #textTours, #idTours, #textPhone, #textEmail{
     height: 20px;
 }
 .form__btn{

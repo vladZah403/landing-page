@@ -12,6 +12,7 @@ const key = document.querySelector('#key')
 const user = document.querySelector('#user')
 
 const Exit = document.querySelector(".Exit")
+const textEmail =document.querySelector("#textEmail")
 
 let textUsername = document.querySelector('#textUsername')
 
@@ -182,6 +183,9 @@ submitSign.addEventListener('click', () => {
         at.innerHTML = ` ${UserStopeg.UserEmail}`
 
         textUsername.value = `${UserStopeg.Login}`
+        textEmail.value = ` ${UserStopeg.UserEmail} `
+
+
     }
 })
 

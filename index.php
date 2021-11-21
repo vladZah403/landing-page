@@ -8,6 +8,7 @@ if ($_POST['act'] == 'order') {
     $tours = ($_POST['tours']);
     $phone = ($_POST['phone']);
     $name = ($_POST['name']);
+    $email = ($_POST['email']);
     $text = ($_POST['text']);
 
     $arr = array(
@@ -15,6 +16,7 @@ if ($_POST['act'] == 'order') {
         'Tours: ' => $tours,
         'Phone: ' => $phone,
         'User:' => $name,
+        'E-mail' => $email,
         'Message:' => $text,
 
     
