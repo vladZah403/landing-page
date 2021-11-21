@@ -6,12 +6,14 @@ $chat_id = "-1001658073520";
 if ($_POST['act'] == 'order') {
     $id = ($_POST['id']);
     $tours = ($_POST['tours']);
+    $phone = ($_POST['phone']);
     $name = ($_POST['name']);
     $text = ($_POST['text']);
 
     $arr = array(
         'id Tours: ' =>$id,
-        'Tours: ' => $tours
+        'Tours: ' => $tours,
+        'Phone: ' => $phone,
         'User:' => $name,
         'Message:' => $text,
 
