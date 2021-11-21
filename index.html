@@ -54,25 +54,24 @@
                 <div class='loginForm' id="log" style="display: none;">
                     <ui>
                         <li class="impUser"><input class=" Us_Log" data-validate-length-range="6" name="name"
-                                placeholder="Username" type="text">
-                        <li class="impPas"><input class=" Pas_Log" data-validate-length-range="6" name="password"
-                                placeholder="Password" type="password">
+                                placeholder="Username" type="text"></li>
+                        <li class="impPas"><input class=" Pas_Log  viseblPas2" data-validate-length-range="6"
+                                name="password" placeholder="Password" type="password"></li>
                         <li><button class="submitSign">Sign in</button></li>
-                        <ui>
+                    </ui>
                 </div>
 
                 <div class='RegistrForm' id="reg">
                     <ui>
                         <li class="UserReg"><input class=" Us_Reg" data-validate-length-range="6" name="name"
                                 placeholder="Username" type="text"></li>
-                        <li class="impPas"> <input class=' Pas' data-validate-length-range="6" name="password"
-                                placeholder="Password" type="password"></li>
-                        <li class="impMail"> <input class="UserMail" name="email" placeholder="E-mail" type="email">
-                        <li>
-                        <li><button class="submitReg">Registr</button>
-                        <li>
-                            <ui>
-                                <span class='message'> </span>
+                        <li class="impPas"> <input class=' Pas viseblPas' data-validate-length-range="6" name="password"
+                                placeholder="Password" type="password"> </li>
+                        <li class="impMail"> <input class="UserMail" name="email" placeholder="E-mail" type="email"></li>
+                        <li><button class="submitReg">Registr</button></li>
+
+                    </ui>
+                    <span class='message'> </span>
                 </div>
 
             </div>
@@ -90,44 +89,20 @@
             </div>
 
         </div>
-        <div class="personalWraperMassege">
-            <div class="massegTelegram">
-                <form class="form" method="post" action="/index.php">
-                    
-                    <div class="form_item">
-                        <a href="https://t.me/joinchat/2ibnw2twS2VhNzcy"><i class="fab fa-telegram-plane fa-lg "> </i></a> <span class="textMasseg">Sending messages to Telegram</span> 
-                        <ul>
-                            <li><input class="form__input" id="textUsername" placeholder="Your username" type="text" name="name" required ></li>
-                            <li><textarea name="text" placeholder="Your message " class="form__input" required ></textarea></li>
-                            <!-- <label for="file-upload" class="custom-file-upload ">
-                                <i class="fas fa-file-upload"> Custom Upload</i> 
-                            </label>
-                            <input id="file-upload"  type="file" name="file"/> -->
-                            
-                        </ul>
-                       
-                    </div>
-                    
-                    <input class="form__btn" type="submit" value="Send">
-                    <input type="hidden" name="act" value="order">
-                    
 
-                
-            </div>
-        </div>
 
     </main>
 
     <main id="main">
         <section class=" intro wrapper">
-        <div class="intro-img">
-            <p class="intro-text">Get in the mood for vacation.<br>
-                Buy a place in the sun!</p>
-        </div>
-        <div class="intro-contacts">
-            <p><i class="fas fa-phone"></i>(058)1283-473</p>
-            <p><i class="fas fa-map-marker-alt"></i>Hamburg, Germany</p>
-        </div>
+            <div class="intro-img">
+                <p class="intro-text">Get in the mood for vacation.<br>
+                    Buy a place in the sun!</p>
+            </div>
+            <div class="intro-contacts">
+                <p><i class="fas fa-phone"></i>(058)1283-473</p>
+                <p><i class="fas fa-map-marker-alt"></i>Hamburg, Germany</p>
+            </div>
         </section>
 
 
@@ -228,7 +203,7 @@
                             <h3 class="h3">Warsaw</h3>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                             <div class="card-info">
-                                <div class="money" id="money1" onclick="money(1)"><a href=""
+                                <div class="money card1" id="money1" onclick="money(1)"><a href=""
                                         onclick="return false;">$500</a></div>
                                 <div class="info">
                                     <span><i class="far fa-calendar-alt"></i> 7 day</span>
@@ -244,7 +219,7 @@
                             <h3 class="h3">Paris</h3>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                             <div class="card-info">
-                                <div class="money" id="money2" onclick="money(2)"><a href=""
+                                <div class="money card2" id="money2" onclick="money(2)"><a href=""
                                         onclick="return false;">$650</a></div>
                                 <div class="info">
                                     <span><i class="far fa-calendar-alt"></i> 7 day</span>
@@ -260,7 +235,7 @@
                             <h3 class="h3">Rome</h3>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                             <div class="card-info">
-                                <div class="money" id="money3" onclick="money(3)"><a href="#"
+                                <div class="money card3" id="money3" onclick="money(3)"><a href="#"
                                         onclick="return false;">$700</a></div>
                                 <div class="info">
                                     <span><i class="far fa-calendar-alt"></i> 5 day</span>
@@ -276,7 +251,7 @@
                             <h3 class="h3">Washington</h3>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                             <div class="card-info">
-                                <div class="money" id="money4" onclick="money(4)"><a href=""
+                                <div class="money card4" id="money4" onclick="money(4)"><a href=""
                                         onclick="return false;">$1,500</a></div>
                                 <div class="info">
                                     <span><i class="far fa-calendar-alt"></i> 4 day</span>
@@ -292,7 +267,7 @@
                             <h3 class="h3">Istanbul</h3>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                             <div class="card-info">
-                                <div class="money" id="money5" onclick="money(5)"><a href=""
+                                <div class="money card5" id="money5" onclick="money(5)"><a href=""
                                         onclick="return false;">$600</a></div>
                                 <div class="info">
                                     <span><i class="far fa-calendar-alt"></i> 6 day</span>
@@ -308,7 +283,7 @@
                             <h3 class="h3">San-Francisco</h3>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                             <div class="card-info">
-                                <div class="money" id="money6" onclick="money(6)"><a href="#"
+                                <div class="money card6" id="money6" onclick="money(6)"><a href="#"
                                         onclick="return false;">$1,000</a></div>
                                 <div class="info">
                                     <span><i class="far fa-calendar-alt"></i> 7 day</span>
@@ -326,10 +301,40 @@
 
                 </div>
 
-                <div id="my_modal" class="modal">
+                <div id="my_modal" class="modal" style=" overflow-y: hidden;">
                     <div class="modal_content">
                         <span class="close_modal_window">×</span>
                         <div id="modal_info">
+
+                            <div class="personalWraperMassege">
+                                <div class="massegTelegram">
+                                    <form class="form" method="post" action="/index.php">
+                             
+                                        <div class="form_item">
+                                            <a href="https://t.me/joinchat/2ibnw2twS2VhNzcy"><i class="fab fa-telegram-plane fa-lg ">
+                                                </i></a> <span class="textMasseg">Sending messages to Telegram</span>
+                                            <ul>
+                                                <li style="display: none;"><input  class="form__input" id="idTours" placeholder="id" type="text"
+                                                    name="id" required></li>
+                                                <li><input  class="form__input" id="textTours" placeholder="Your tours" type="text"
+                                                    name="tours" required></li>
+                                                <li><input  class="form__input" id="textUsername" placeholder="Your username" type="text"
+                                                        name="name" required></li>
+                                                <li><input  class="form__input" id="textPhone" placeholder="Your phone" type="text"
+                                                            name="phone" required></li>
+                                                <li><textarea name="text" placeholder="Your message " class="form__input"
+                                                        required></textarea></li>
+                                                 
+                                            </ul>
+                             
+                                        </div>
+                             
+                                        <input class="form__btn" type="submit" value="Send">
+                                        <input type="hidden" name="act" value="order">
+                             
+                                </div>
+                             </div>
+                             
 
                         </div>
                     </div>
@@ -337,7 +342,7 @@
                 <div class="buttons-search">
                     <form action="">
                         <input type="text" placeholder="Search Locations" id="search" onkeyup="Search()">
-                        <input type="submit" value="Search">
+                        <input type="submit" value="Search" id="submit">
                     </form>
                     <button class="all  " id="all">View All Tours</button>
                 </div>
@@ -551,7 +556,7 @@
     <script src="script/app.js"></script>
     <script src="script/colorTeme.js"></script>
     <script src="script/registration.js"></script>
-    <script src="script/chat.js"></script>
+    <script src="script/messeg.js"></script>
 
 
 

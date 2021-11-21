@@ -3,9 +3,7 @@
   let money1 =document.getElementById(`money${el}`)
   money1.classList.add("btn_modal_window")
   modal.style.display = "block";
-   document.getElementById("modal_info").innerHTML = `
-   <p class="modal_text">  Tour Design</p>
-   `
+   
    console.log(`${el}`);
 } 
 

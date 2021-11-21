@@ -257,7 +257,7 @@ span #color{
     grid-row-gap: 20px;
     padding-top: 20px;
 }
-.tours input[type=text]{
+.tours #search{
     margin-top: 50px;
     width: 300px;
     height: 70px;
@@ -272,7 +272,7 @@ span #color{
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
 }
-.tours input[type=submit]{
+.tours #submit{
     width: 115px;
     border: none;
     height: 70px;
@@ -559,7 +559,7 @@ hr.hr-bottom{
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: rgba(0,0,0,0.6);
+    background-color: rgba(0, 0, 0, 0.212);
     z-index: 1000;
 }
 .modal .modal_content {
@@ -696,15 +696,17 @@ hr.hr-bottom{
     
 }
 .personalWraperMassege{
+   
     margin: 0 auto;
     max-width: 500px;
 }
 .massegTelegram{
+    
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    margin: 15px;
+    margin: 25px;
     padding: 15px;
     border-radius: 2px;
     border: 1px solid black;
@@ -712,6 +714,7 @@ hr.hr-bottom{
 }
 .textMasseg{
     font-size: 16px;
+    
 }
 
 .form_item li{
@@ -725,7 +728,7 @@ height: 70px;
 border-radius: 3px;
 border: 1px solid black;
 }
-#textUsername{
+#textUsername, #textTours, #idTours, #textPhone{
     height: 20px;
 }
 .form__btn{
@@ -840,7 +843,7 @@ input[type="file"] {
     margin-bottom: 10px;
 }
 
-
+ 
 
 
 @media screen and (max-width: 1400px){

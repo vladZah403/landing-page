@@ -7,14 +7,13 @@ const Main = document.querySelector('#main')
 const mainRegistr = document.querySelector('#mainRegistr')
 const message = document.querySelector('.message')
 
-
 const at = document.querySelector('#at')
 const key = document.querySelector('#key')
 const user = document.querySelector('#user')
 
 const Exit = document.querySelector(".Exit")
- 
-let textUsername =document.querySelector('#textUsername')
+
+let textUsername = document.querySelector('#textUsername')
 
 batRegistr.addEventListener('click', () => {
     Main.style.display = 'none'
@@ -70,11 +69,11 @@ submitReg.addEventListener('click', () => {
     let userProver = JSON.parse(localStorage.getItem(UserReg))
 
     console.log(userProver);
-    
-    if(userProver !== null ){
-       console.log(userProver)
-       message.innerHTML =' User with this username already exists'
-    }else if (  UserReg && UserReg.match(regUser) !== null && UserPas.match(regPassword) !== null && UserMail.match(regMail) !== null) {
+
+    if (userProver !== null) {
+        console.log(userProver)
+        message.innerHTML = ' User with this username already exists'
+    } else if (UserReg && UserReg.match(regUser) !== null && UserPas.match(regPassword) !== null && UserMail.match(regMail) !== null) {
 
         carentUser.Login = UserReg;
         carentUser.UserPassword = UserPas;
@@ -84,7 +83,7 @@ submitReg.addEventListener('click', () => {
 
         localStorage.setItem(`${UserReg}`, `${objUser}`);
 
-        
+
 
         console.log(carentUser);
 
@@ -101,7 +100,7 @@ submitReg.addEventListener('click', () => {
         batRegistr.classList.add('userBox');
         batRegistr = document.querySelector('.userBox')
 
-        textUsername.value= `${UserReg}`
+        textUsername.value = `${UserReg}`
         user.innerHTML = ` ${UserReg}`
 
         key.innerHTML = ` ${UserPas}`
@@ -114,7 +113,7 @@ submitReg.addEventListener('click', () => {
         message.innerHTML = 'You entered an incorrect password'
     } else if (UserMail.match(regMail) == null) {
         message.innerHTML = 'You entered an invalid E-mail'
-    } 
+    }
 
 })
 
@@ -137,12 +136,12 @@ logo.addEventListener('click', () => {
     mainRegistr.style.display = 'none'
 })
 
-Exit.addEventListener('click', () =>{
+Exit.addEventListener('click', () => {
     window.location.href = '../index.html';
 })
 
 let nameLog = ''
-let pasLog =' '
+let pasLog = ' '
 
 const submitSign = document.querySelector('.submitSign')
 
@@ -154,12 +153,12 @@ document.querySelector('.Pas_Log ').addEventListener('input', () => {
     pasLog = document.querySelector(' .Pas_Log ').value;
 })
 
-submitSign.addEventListener('click', () =>{
+submitSign.addEventListener('click', () => {
     console.log(nameLog);
     console.log(pasLog);
     let UserStopeg = JSON.parse(localStorage.getItem(nameLog))
-    
-    if(nameLog === UserStopeg.Login && pasLog === UserStopeg.UserPassword){
+
+    if (nameLog === UserStopeg.Login && pasLog === UserStopeg.UserPassword) {
 
         carentUser.Login = UserStopeg.Login;
         carentUser.UserPassword = UserStopeg.UserPassword;
@@ -182,9 +181,29 @@ submitSign.addEventListener('click', () =>{
 
         at.innerHTML = ` ${UserStopeg.UserEmail}`
 
-        textUsername.value= `${UserStopeg.Login}`
+        textUsername.value = `${UserStopeg.Login}`
     }
 })
 
+// let eye = document.querySelector('.eye-icon')
+// let viseblPas = document.querySelector('.viseblPas')
+// let viseblPas2 = document.querySelector('.viseblPas2')
+
+// eye.addEventListener('click', () => {
+//     if (eye.classList.contains('fa-eye')) {
+//         eye.classList.remove('fa-eye')
+//         eye.classList.add('fa-eye-slash')
+//         viseblPas.setAttribute("type", "text")
+
+
+//     }else if(eye.classList.contains('fa-eye-slash')){
+//         eye.classList.remove('fa-eye-slash')
+//         eye.classList.add('fa-eye')
+//         viseblPas.setAttribute("type", "password") 
+
+
+//     }
+
+// })
 
 
