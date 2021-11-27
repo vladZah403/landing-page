@@ -719,6 +719,8 @@ hr.hr-bottom{
 
 .form_item li{
     list-style-type: none;
+    display: flex;
+    justify-content: center;
 }
 .form__input{
 margin: 10px;
@@ -1003,7 +1005,19 @@ input[type="file"] {
         margin-top: 20px ;
         margin-left: 25px;
     }
-    .tours input[type=text]{
+    .form__input{
+        margin: 10px;
+        padding: 10px;
+        width: 150px;
+        height: 70px;
+        border-radius: 3px;
+        border: 1px solid black;
+        }
+    .form__btn{
+        margin: 20px;
+    }
+
+    .tours #search{
         margin-top: 20px;
         width: 130px;
     }
